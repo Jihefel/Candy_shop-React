@@ -2,28 +2,34 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from "../assets/images/dall-e.png";
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import data from "../assets/data/data.json"
 
 function NavBar() {
+
+  const [isShown, setIsShown] = useState(false);
+  
+
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={logo} alt="" style={{height : "150px"}}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+          <Nav className="mx-auto">
+            <NavLink to="/">Home</NavLink>
+            <NavDropdown title="Produits" id="basic-nav-dropdown" renderMenuOnMount={true} menuVariant="dark">
+              {Object.keys(data).map((category, index) => (
+                <NavDropdown.Item key={index}>
+                <NavLink to={category}>{category.replace(/_/g, " ")}</NavLink>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              ))}
             </NavDropdown>
+          </Nav>
+          <Nav>
+            Invité
           </Nav>
         </Navbar.Collapse>
       </Container>
