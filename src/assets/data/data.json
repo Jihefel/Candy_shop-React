@@ -1,0 +1,974 @@
+{
+  "bonbons": [
+    {
+      "id": "bo001",
+      "nom": "Mentos",
+      "prix": 1.49,
+      "description": "Bonbons à la menthe avec une texture dure à l'extérieur et douce à l'intérieur.",
+      "image": "bonbon/mentos/mentos-mint.png",
+      "details": {
+        "ingredients_principaux": [
+          "Sirop de glucose",
+          "Sucre",
+          "Huile végétale",
+          "Arômes naturels",
+          "Acide citrique",
+          "Gomme arabique"
+        ],
+        "info_nutritionnelles": {
+          "calories": 10,
+          "glucides": 3,
+          "protéines": 0,
+          "lipides": 0
+        }
+      },
+      "variations": [
+        {
+          "nom": "Menthe",
+          "image": "bonbon/mentos/mentos-mint.png"
+        },
+        {
+          "nom": "Fruit",
+          "image": "bonbon/mentos/mentos-fruit.png"
+        }
+      ]
+    },
+    {
+      "id": "bo002",
+      "nom": "Haribo",
+      "prix": 1.99,
+      "description": "Petits oursons gélifiés avec une texture douce et une variété de saveurs de fruits.",
+      "image": "bonbon/haribos/Haribo-Goldbears.png",
+      "details": {
+        "ingredients_principaux": [
+          "Sirop de glucose",
+          "Sucre",
+          "Gélatine",
+          "Dextrose",
+          "Acide citrique",
+          "Arômes naturels",
+          "Colorants alimentaires"
+        ],
+        "info_nutritionnelles": {
+          "calories": 140,
+          "glucides": 32,
+          "protéines": 2,
+          "lipides": 0
+        }
+      },
+      "variations": [
+        {
+          "nom": "Oursons d'or",
+          "image": "bonbon/haribos/Haribo-Goldbears.png"
+        },
+        {
+          "nom": "Happy Cherries",
+          "image": "bonbon/haribos/cherries.webp"
+        },
+        {
+          "nom": "Dragibus",
+          "image": "bonbon/haribos/dragibus.png"
+        }
+      ]
+    },
+    {
+      "id": "bo003",
+      "nom": "Napoléon",
+      "prix": 2.49,
+      "description": "Les bonbons Napoléons sont des bonbons acidulés et durs, avec une texture croquante et rafraîchissante qui apaise l'haleine et leur goût est apprécié depuis des générations.",
+      "image": "bonbon/napoleons/citron.png",
+      "details": {
+        "ingredients_principaux": [
+        "Sirop de glucose", 
+        "Sucre", 
+        "Gélatine", 
+        "Dextrose", 
+        "Acide citrique", 
+        "Arômes naturels", 
+        "Colorants alimentaires"
+      ],
+      "info_nutritionnelles": {
+        "calories": 140,
+        "glucides": 32,
+        "protéines": 2,
+        "lipides": 0
+      }
+    },
+      "variations": [
+        {
+          "nom": "Citron",
+          "image": "bonbon/napoleons/citron.png"
+        },
+        {
+          "nom": "Framboise",
+          "image": "bonbon/napoleons/framboise.png"
+        },
+        {
+          "nom": "Fruit Rouges",
+          "image": "bonbon/napoleons/fruitsrouge.png"
+        },
+        {
+          "nom": "Tropical",
+          "image": "bonbon/napoleons/tropical.png"
+        }
+      ]
+    },
+{
+      "id": "bo004",
+      "nom": "Chupa Chups",
+      "prix": 1.99,
+      "description": "Les sucettes Chupa Chups sont des sucettes sphériques sur un bâtonnet en plastique, offrant une variété de saveurs fruitées et acidulées. Leur texture douce et leur forme reconnaissable en font un classique des confiseries pour petits et grands.",
+      "image": "bonbon/chupaChups/Strawberry.png",
+      "details": {
+        "ingredients_principaux": [
+        "Sirop de glucose", 
+        "Sucre", 
+        "Gélatine", 
+        "Dextrose", 
+        "Acide citrique", 
+        "Arômes naturels", 
+        "Colorants alimentaires"
+      ],
+      "info_nutritionnelles": {
+        "calories": 140,
+        "glucides": 32,
+        "protéines": 2,
+        "lipides": 0
+      }
+    },
+      "variations": [
+        {
+          "nom": "Fraise",
+          "image": "bonbon/chupaChups/Strawberry.png"
+        },
+        {
+          "nom": "Cola",
+          "image": "bonbon/chupaChups/Cola.png"
+        },
+        {
+          "nom": "Pomme",
+          "image": "bonbon/chupaChups/pomme.png"
+        },
+        {
+          "nom": "Cerise",
+          "image": "bonbon/chupaChups/cherry.png"
+        }
+      ]
+    },
+{
+      "id": "bo005",
+      "nom": "Lutti Coca",
+      "prix": 1.99,
+      "description": "Les bonbons Lutti sont des bonbons gélifiés en forme d'oursons, proposant une multitude de saveurs fruitées comme la cerise, la fraise, la pomme et bien d'autres encore. Leur texture douce et leur goût sucré en font un en-cas idéal pour les amateurs de sucreries.",
+      "image": "bonbon/lutti/cola.png",
+      "details": {
+        "ingredients_principaux": [
+        "Sirop de glucose", 
+        "Sucre", 
+        "Gélatine", 
+        "Dextrose", 
+        "Acide citrique", 
+        "Arômes naturels", 
+        "Colorants alimentaires"
+      ],
+      "info_nutritionnelles": {
+        "calories": 140,
+        "glucides": 32,
+        "protéines": 2,
+        "lipides": 0
+      }
+    },
+      "variations": [
+        {
+          "nom": "Cola",
+          "image": "bonbon/lutti/cola.png"
+        },
+        {
+          "nom": "Long Fizz",
+          "image": "bonbon/lutti/longFizz.png"
+        },
+        {
+          "nom": "Arlequins",
+          "image": "bonbon/lutti/arlequins.png"
+        }
+      ]
+    }
+  ],
+  "barres_chocolatées": [
+    {
+      "id": "bc001",
+      "nom": "Côte d'Or",
+      "prix": 1.99,
+      "image": "chocolat/cote-dor/cotedor-noir-intense-70.png",
+      "description": "Une barre de chocolat noir intense de qualité supérieure, fabriquée en Belgique avec des fèves de cacao soigneusement sélectionnées.",
+      "details": {
+        "ingredients_principaux": [
+          "Pâte de cacao",
+          "Sucre",
+          "Beurre de cacao",
+          "Emulsifiant : lécithine de soja",
+          "Arôme naturel de vanille"
+        ],
+        "info_nutritionnelles": {
+          "calories": 220,
+          "lipides": 14,
+          "glucides": 18,
+          "protéines": 3,
+          "fibres": 4
+        }
+      },
+      "variations": [
+        {
+          "nom": "Noir 70% Intense",
+          "image": "chocolat/cote-dor/cotedor-noir-intense-70.png"
+        },
+        {
+          "nom": "Chocolat au Lait",
+          "image": "chocolat/cote-dor/cotedor-lait.png"
+        },
+        {
+          "nom": "Noir 86% Intense",
+          "image": "chocolat/cote-dor/cotedor-noir-86.png"
+        },
+        {
+          "nom": "Noir Orange",
+          "image": "chocolat/cote-dor/cotedor-orange.png"
+        }
+      ]
+    },
+    {
+      "id": "bc002",
+      "nom": "Leonidas",
+      "prix": 2.50,
+      "image": "chocolat/leonidas/leonidas-lait.png",
+      "description": "Une délicieuse barre chocolatée au lait de qualité supérieure, fabriquée en Belgique avec du chocolat belge pur beurre de cacao.",
+      "details": {
+        "ingredients_principaux": [
+          "Sucre",
+          "Lait en poudre",
+          "Beurre de cacao",
+          "Pâte de cacao",
+          "Lécithine de soja",
+          "Arôme naturel de vanille"
+        ],
+        "info_nutritionnelles": {
+          "calories": 210,
+          "lipides": 12,
+          "glucides": 23,
+          "protéines": 3,
+          "fibres": 1
+        }
+      },
+      "variations": [
+        {
+          "nom": "Lait",
+          "image": "chocolat/leonidas/leonidas-lait.png"
+        },
+        {
+          "nom": "Noir",
+          "image": "chocolat/leonidas/leonidas-noir.png"
+        },
+        {
+          "nom": "Blanc",
+          "image": "chocolat/leonidas/leonidas-blanc.png"
+        },
+        {
+          "nom": "Lait aux noisettes",
+          "image": "chocolat/leonidas/leonidas-lait-noizettes.png"
+        },
+        {
+          "nom": "Noir Orange",
+          "image": "chocolat/leonidas/leonidas-orange.png"
+        }
+      ]
+    },
+    {
+      "id": "bc003",
+      "nom": "Newtree",
+      "prix": 3.00,
+      "image": "chocolat/newtree/newtree-noir.png",
+      "description": "Une barre de chocolat noir bio et équitable de qualité supérieure, fabriquée en Belgique avec des fèves de cacao biologiques soigneusement sélectionnées.",
+      "details": {
+        "ingredients_principaux": [
+          "Pâte de cacao",
+          "Sucre de canne",
+          "Beurre de cacao",
+          "Lécithine de tournesol",
+          "Extrait de vanille Bourbon"
+        ],
+        "info_nutritionnelles": {
+          "calories": 230,
+          "lipides": 16,
+          "glucides": 16,
+          "protéines": 3,
+          "fibres": 4
+        }
+      },
+      "variations": [
+        {
+          "nom": "Barre Chocolatée Noir Bio",
+          "image": "chocolat/newtree/newtree-noir.png"
+        },
+        {
+          "nom": "Barre Chocolatée Lait Bio",
+          "image": "chocolat/newtree/newtree-lait.jpg"
+        },
+        {
+          "nom": "Barre Chocolatée Noir 72% Bio",
+          "image": "chocolat/newtree/newtree-noir72.png"
+        }
+      ]
+    },
+    {
+      "id": "bc004",
+      "nom": "Galler",
+      "prix": 2.20,
+      "image": "chocolat/galler/galler-lait.png",
+      "description": "Une délicieuse barre chocolatée au lait avec un cœur praliné fondant, fabriquée en Belgique avec du chocolat belge pur beurre de cacao.",
+      "details": {
+        "ingredients_principaux": [
+          "Sucre",
+          "Lait en poudre",
+          "Beurre de cacao",
+          "Pâte de cacao",
+          "Praliné (noisettes, sucre)",
+          "Lécithine de soja",
+          "Arôme naturel de vanille"
+        ],
+        "info_nutritionnelles": {
+          "calories": 220,
+          "lipides": 13,
+          "glucides": 23,
+          "protéines": 3,
+          "fibres": 1
+        }
+      },
+      "variations": [
+        {
+          "nom": "Barre Chocolatée Praliné",
+          "image": "chocolat/galler/galler-lait.png"
+        },
+        {
+          "nom": "Barre Chocolatée Noir Praliné",
+          "image": "chocolat/galler/galler-noir.png"
+        },
+        {
+          "nom": "Barre Chocolatée Blanc Praliné",
+          "image": "chocolat/galler/galler-blanc.png"
+        }
+      ]
+    },
+    {
+      "id": "bc005",
+      "nom": "Nestlé",
+      "prix": 1.20,
+      "image": "chocolat/nestle/crunch-lait.webp",
+      "description": "La barre chocolatée Crunch de Nestlé est un mélange unique de chocolat au lait croustillant et de riz soufflé. C'est un classique du genre, apprécié par les enfants et les adultes depuis des décennies.",
+      "details": {
+        "ingredients_principaux": [
+          "Sucre",
+          "Lait écrémé en poudre",
+          "Beurre de cacao",
+          "Pâte de cacao",
+          "Riz soufflé (10%)",
+          "Lactosérum en poudre",
+          "Lactose",
+          "Huile de palme",
+          "Lécithine de soja",
+          "Sel",
+          "Arôme naturel de vanille"
+        ],
+        "info_nutritionnelles": {
+          "calories": 220,
+          "lipides": 11,
+          "glucides": 29,
+          "protéines": 2,
+          "fibres": 1
+        }
+      },
+      "variations": [
+        {
+          "nom": "Barre Chocolatée Crunch",
+          "image": "chocolat/nestle/crunch-lait.webp"
+        },
+        {
+          "nom": "Barre Chocolatée Blanc Crunch",
+          "image": "chocolat/nestle/crunch-blanc.png"
+        },
+        {
+          "nom": "Barre Chocolatée Noir Crunch",
+          "image": "chocolat/nestle/crunch-noir.jpg"
+        }
+      ]
+    }
+  ],
+  "energy_drinks": [
+    {
+      "id": "ed001",
+      "nom": "Red Bull Energy Drink",
+      "prix": 2.50,
+      "image": "https://www.example.com/images/red-bull-energy-drink.jpg",
+      "description": "Red Bull est une boisson énergisante populaire qui fournit une dose de caféine et d'autres ingrédients stimulants pour améliorer l'énergie, la concentration et les performances. La boisson a une saveur douce et acidulée, avec un goût légèrement amer caractéristique de la caféine.",
+      "details": {
+        "ingredients_principaux": [
+          "Eau",
+          "Saccharose",
+          "Glucose",
+          "Acidifiant (Acide citrique)",
+          "Carbonate de magnésium",
+          "Taurine (0,4%)",
+          "Caféine (0,03%)",
+          "Vitamines (B3, B5, B6, B12)",
+          "Arômes naturels",
+          "Colorant (Caramel)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 110,
+          "lipides": 0,
+          "glucides": 28,
+          "protéines": 0,
+          "sodium": 105,
+          "taurine": 400
+        }
+      },
+      "variations": [
+        {
+          "nom": "Red Bull Sugarfree Energy Drink",
+          "image": "https://www.example.com/images/red-bull-sugarfree-energy-drink.jpg"
+        },
+        {
+          "nom": "Red Bull Energy Drink Tropical",
+          "image": "https://www.example.com/images/red-bull-energy-drink-tropical.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ed002",
+      "nom": "Monster Energy",
+      "prix": 3.00,
+      "image": "https://www.example.com/images/monster-energy.jpg",
+      "description": "Monster Energy est une boisson énergisante populaire qui contient une combinaison de caféine, de taurine, de guarana et d'autres ingrédients stimulants pour augmenter l'énergie, la concentration et les performances. La boisson a une saveur sucrée et fruitée, avec un arrière-goût légèrement amer.",
+      "details": {
+        "ingredients_principaux": [
+          "Eau gazéifiée",
+          "Saccharose",
+          "Glucose",
+          "Acidifiant (Acide citrique)",
+          "Taurine (0,4%)",
+          "Caféine (0,03%)",
+          "Extrait de guarana (0,1%)",
+          "Vitamines (B2, B3, B6, B12)",
+          "Arômes naturels",
+          "Colorant (Caramel)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 110,
+          "lipides": 0,
+          "glucides": 28,
+          "protéines": 0,
+          "sodium": 180,
+          "taurine": 400
+        }
+      },
+      "variations": [
+        {
+          "nom": "Monster Energy Ultra",
+          "image": "https://www.example.com/images/monster-energy-ultra.jpg"
+        },
+        {
+          "nom": "Monster Energy Assault",
+          "image": "https://www.example.com/images/monster-energy-assault.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ed003",
+      "nom": "Rockstar Energy Drink",
+      "prix": 2.99,
+      "image": "https://www.example.com/images/rockstar-energy-drink.jpg",
+      "description": "Rockstar Energy Drink est une boisson énergisante qui contient une combinaison de caféine, de taurine, de guarana et de ginseng pour augmenter l'énergie et la concentration. La boisson a une saveur légèrement sucrée avec des notes de fruits tropicaux et une texture effervescente.",
+      "details": {
+        "ingredients_principaux": [
+          "Eau gazéifiée",
+          "Sucre",
+          "Acidifiants (Acide citrique, Acide carbonique)",
+          "Taurine (0,4%)",
+          "Correcteurs d'acidité (Citrate de sodium, Citrate de potassium)",
+          "Caféine (0,03%)",
+          "Extrait de guarana (0,01%)",
+          "Extrait de ginseng (0,01%)",
+          "Inositol",
+          "Vitamines (Niacine, Acide pantothénique, Vitamine B6, Vitamine B12)",
+          "Arômes naturels",
+          "Colorants (E150d, E163)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 130,
+          "lipides": 0,
+          "glucides": 32,
+          "protéines": 0,
+          "sodium": 50,
+          "taurine": 400,
+          "caféine": 80,
+          "guarana": 10,
+          "ginseng": 10
+        }
+      },
+      "variations": [
+        {
+          "nom": "Rockstar Sugar-Free",
+          "image": "https://www.example.com/images/rockstar-sugar-free.jpg"
+        },
+        {
+          "nom": "Rockstar Punched Energy + Guava Tropical Guava",
+          "image": "https://www.example.com/images/rockstar-punched-guava.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ed004",
+      "nom": "Nalu Energy Drink",
+      "prix": 1.99,
+      "image": "https://www.example.com/images/nalu-energy-drink.jpg",
+      "description": "Nalu Energy Drink est une boisson énergisante qui contient de la caféine, de la taurine, du guarana et de la vitamine B pour augmenter l'énergie et la concentration. La boisson a une saveur sucrée et fruitée avec des notes de fruits exotiques et une texture effervescente.",
+      "details": {
+        "ingredients_principaux": [
+          "Eau gazéifiée",
+          "Saccharose",
+          "Acidifiants (Acide citrique, Acide malique)",
+          "Taurine (0,4%)",
+          "Correcteurs d'acidité (Citrate de sodium, Carbonate de magnésium)",
+          "Caféine (0,03%)",
+          "Inositol",
+          "Extrait de guarana (0,01%)",
+          "Vitamines (Niacine, Acide pantothénique, Vitamine B6, Vitamine B12)",
+          "Arômes naturels",
+          "Colorant (E150d)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 120,
+          "lipides": 0,
+          "glucides": 29,
+          "protéines": 0,
+          "sodium": 50,
+          "taurine": 400,
+          "caféine": 80,
+          "guarana": 10,
+          "vitamine_B6": 1.2,
+          "vitamine_B12": 3
+        }
+      },
+      "variations": [
+        {
+          "nom": "Nalu Sugar-Free",
+          "image": "https://www.example.com/images/nalu-sugar-free.jpg"
+        },
+        {
+          "nom": "Nalu Tropical Energy",
+          "image": "https://www.example.com/images/nalu-tropical-energy.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ed005",
+      "nom": "Burn Energy Drink",
+      "prix": 2.75,
+      "image": "https://www.example.com/images/burn-energy-drink.jpg",
+      "description": "Burn Energy Drink est une boisson énergisante qui contient une combinaison de caféine, de taurine, d'extrait de guarana et de vitamines B pour stimuler l'énergie et la concentration. La boisson a une saveur légèrement amère avec des notes de fruit rouge et une texture effervescente.",
+      "details": {
+        "ingredients_principaux": [
+          "Eau gazéifiée",
+          "Sucre",
+          "Acidifiants (Acide citrique, Acide malique)",
+          "Taurine (0,4%)",
+          "Correcteur d'acidité (Citrates de sodium)",
+          "Caféine (0,03%)",
+          "Inositol",
+          "Glucuronolactone",
+          "Extrait de guarana (0,01%)",
+          "Vitamines (Niacine, Acide pantothénique, Vitamine B6, Vitamine B12)",
+          "Arômes naturels",
+          "Colorant (E150d)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 117,
+          "lipides": 0,
+          "glucides": 29,
+          "protéines": 0,
+          "sodium": 69,
+          "taurine": 400
+        }
+      },
+      "variations": [
+        {
+          "nom": "Burn Zero",
+          "image": "https://www.example.com/images/burn-zero.jpg"
+        },
+        {
+          "nom": "Burn Energy Lemon Ice",
+          "image": "https://www.example.com/images/burn-ice-storm.jpg"
+        }
+      ]
+    }
+  ],
+  "confiseries": [
+    {
+      "id": "co001",
+      "nom": "Maltesers",
+      "prix": 1.49,
+      "image": "https://www.example.com/images/maltesers.jpg",
+      "description": "Maltesers sont des petites boules croustillantes au malt recouvertes de chocolat au lait. La texture légère et le goût sucré et chocolaté en font une confiserie populaire.",
+      "details": {
+        "ingredients_principaux": [
+          "Sucre",
+          "Lait écrémé en poudre",
+          "Malt en poudre (extrait de malt d'orge, farine d'orge)",
+          "Matière grasse végétale (palme)",
+          "Beurre de cacao",
+          "Masse de cacao",
+          "Lactose et protéines de lactosérum (Lait)",
+          "Petits œufs en sucre",
+          "Emulsifiant (lécithine de soja)",
+          "Poudre à lever (E341, E500, E501)",
+          "Sel",
+          "Arômes",
+          "Glucose",
+          "Huile de palme",
+          "Agent d'enrobage (pectine)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 187,
+          "lipides": 9.5,
+          "glucides": 23.5,
+          "protéines": 2.4,
+          "fibres": 0.3,
+          "sodium": 0.05
+        }
+      },
+      "variations": [
+        {
+          "nom": "Maltesers Teasers",
+          "image": "https://www.example.com/images/maltesers-teasers.jpg"
+        },
+        {
+          "nom": "Maltesers Buttons",
+          "image": "https://www.example.com/images/maltesers-buttons.jpg"
+        }
+      ]
+    },
+    {
+      "id": "co002",
+      "nom": "M&M's Peanut",
+      "prix": 1.99,
+      "image": "https://www.example.com/images/mms-peanut.jpg",
+      "description": "M&M's Peanut est une confiserie croquante enrobée de chocolat au lait et remplie de cacahuètes grillées. Elle est vendue dans un sachet pratique pour une consommation individuelle ou partagée.",
+      "details": {
+        "ingredients_principaux": [
+          "Chocolat au lait (Sucre, Beurre de cacao, Lait écrémé en poudre, Pâte de cacao, Lactose, Matière grasse laitière, Émulsifiant (Lécithine de soja), Arômes naturels)",
+          "Cacahuètes grillées",
+          "Sucre",
+          "Amidon de tapioca",
+          "Sirop de glucose",
+          "Colorants (E100, E120, E133, E160a, E160e, E171)",
+          "Agent d'enrobage (Cire de carnauba)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 250,
+          "lipides": 12,
+          "glucides": 30,
+          "protéines": 4,
+          "sodium": 25,
+          "sucre": 25
+        }
+      },
+      "variations": [
+        {
+          "nom": "M&M's Choco",
+          "image": "https://www.example.com/images/mms-choco.jpg"
+        },
+        {
+          "nom": "M&M's Crispy",
+          "image": "https://www.example.com/images/mms-crispy.jpg"
+        }
+      ]
+    },
+    {
+      "id": "co003",
+      "nom": "Kinder Bueno",
+      "prix": 1.29,
+      "image": "https://www.example.com/images/kinder-bueno.jpg",
+      "description": "Kinder Bueno est une barre chocolatée fourrée de crème de noisettes et croustillante à l'intérieur. Elle est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
+      "details": {
+        "ingredients_principaux": [
+          "Chocolat au lait (31,5 %) (sucre, beurre de cacao, pâte de cacao, lait écrémé en poudre, beurre concentré, émulsifiants : lécithines [soja] ; vanilline)",
+          "Sucre",
+          "Huile de palme",
+          "Farine de froment",
+          "Lait écrémé en poudre (8,5 %)",
+          "Noisettes (5,8 %)",
+          "Lait en poudre",
+          "Chocolat noir (sucres, pâte de cacao, beurre de cacao, émulsifiant : lécithines [soja] ; vanilline)",
+          "Poudres à lever (carbonate acide de sodium, carbonate acide d'ammonium)",
+          "Émulsifiants : lécithines [soja]",
+          "Sel",
+          "Arôme"
+        ],
+        "info_nutritionnelles": {
+          "calories": 245,
+          "lipides": 15,
+          "glucides": 23,
+          "protéines": 3.5,
+          "sodium": 80,
+          "sucre": 22
+        }
+      },
+      "variations": [
+        {
+          "nom": "Kinder Bueno White",
+          "image": "https://www.example.com/images/kinder-bueno-white.jpg"
+        },
+        {
+          "nom": "Kinder Bueno Dark",
+          "image": "https://www.example.com/images/kinder-bueno-dark.jpg"
+        }
+      ]
+    },
+    {
+      "id": "co004",
+      "nom": "Milka Léo",
+      "prix": 1.09,
+      "image": "https://www.example.com/images/leo-de-milka.jpg",
+      "description": "Léo de Milka est une barre chocolatée composée d'une fine gaufrette croquante enrobée de chocolat au lait Milka. Cette confiserie est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
+      "details": {
+        "ingredients_principaux": [
+          "Chocolat au lait (40%) (sucre, beurre de cacao, lait en poudre, pâte de cacao, émulsifiants : lécithines de soja, arôme naturel de vanille)",
+          "Farine de blé",
+          "Sucre",
+          "Matières grasses végétales (palme, palmiste)",
+          "Lait écrémé en poudre",
+          "Lactose",
+          "Protéines de lait",
+          "Sel",
+          "Poudres à lever (carbonate acide de sodium, carbonate acide d'ammonium)",
+          "Emulsifiants : lécithines de soja"
+        ],
+        "info_nutritionnelles": {
+          "calories": 162,
+          "lipides": 8.4,
+          "glucides": 18.8,
+          "protéines": 2.7,
+          "sodium": 62,
+          "sucre": 14.9
+        }
+      },
+      "variations": [
+        {
+          "nom": "Léo Choco blanc",
+          "image": "https://www.example.com/images/leo-choco-caramel.jpg"
+        }
+      ]
+    },
+    {
+      "id": "co005",
+      "nom": "Kinder Country",
+      "prix": 1.29,
+      "image": "https://www.example.com/images/kinder-country.jpg",
+      "description": "Kinder Country est une barre chocolatée croustillante composée de céréales soufflées, de lait et de chocolat au lait Kinder. Cette confiserie est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
+      "details": {
+        "ingredients_principaux": [
+          "Chocolat au lait (31,5%) (sucre, beurre de cacao, pâte de cacao, lait écrémé en poudre, beurre concentré, émulsifiant: lécithines (soja), vanilline)",
+          "Sucre",
+          "Lait écrémé en poudre",
+          "Huile de palme",
+          "Céréales (8,5%) (riz, blé)",
+          "Beurre concentré",
+          "Emulsifiant: lécithines (soja)",
+          "Arômes"
+        ],
+        "info_nutritionnelles": {
+          "calories": 112,
+          "lipides": 6.6,
+          "glucides": 11.3,
+          "protéines": 1.5,
+          "sodium": 46,
+          "sucre": 10.1
+        }
+      },
+      "variations": [
+        {
+          "nom": "Kinder Country Mini",
+          "image": "https://www.example.com/images/kinder-country-mini.jpg"
+        }
+      ]
+    }
+  ],
+  "chips": [
+    {
+      "id": "ch001",
+      "nom": "Lay's saveur Original",
+      "prix": 1.99,
+      "image": "https://www.example.com/images/lays-original.jpg",
+      "description": "Les chips saveur Original de Lays sont des chips croustillantes et légèrement salées. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
+      "details": {
+        "ingredients_principaux": [
+          "Pommes de terre",
+          "Huile de tournesol (30%)",
+          "Sel"
+        ],
+        "info_nutritionnelles": {
+          "calories": 160,
+          "lipides": 10,
+          "glucides": 15,
+          "protéines": 2,
+          "sodium": 170,
+          "sucre": 0.5
+        }
+      },
+      "variations": [
+        {
+          "nom": "Chips saveur Barbecue",
+          "image": "https://www.example.com/images/lays-barbecue.jpg"
+        },
+        {
+          "nom": "Chips saveur Fromage et oignon",
+          "image": "https://www.example.com/images/lays-fromage-oignon.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ch002",
+      "nom": "Pringles Original",
+      "prix": 2.49,
+      "image": "https://www.example.com/images/pringles-original.jpg",
+      "description": "Les chips saveur Original de Pringles sont des chips croustillantes et légèrement salées. Leur forme unique et leur texture croquante les rendent très populaires auprès des amateurs de chips. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
+      "details": {
+        "ingredients_principaux": [
+          "Pommes de terre déshydratées",
+          "Huiles végétales (tournesol, maïs), farine de riz",
+          "Amidon de blé",
+          "Emulsifiant (E471)",
+          "Maltodextrine",
+          "Sel",
+          "Sirop de glucose",
+          "Extrait de levure",
+          "Arômes naturels",
+          "Colorant (paprika)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 150,
+          "lipides": 9,
+          "glucides": 15,
+          "protéines": 1,
+          "sodium": 140,
+          "sucre": 0.5
+        }
+      },
+      "variations": [
+        {
+          "nom": "Chips saveur Barbecue",
+          "image": "https://www.example.com/images/pringles-barbecue.jpg"
+        },
+        {
+          "nom": "Chips saveur Fromage",
+          "image": "https://www.example.com/images/pringles-fromage.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ch003",
+      "nom": "Chips cuites au four saveur Jalapeño",
+      "prix": 3.99,
+      "image": "https://www.example.com/images/kettle-jalapeno.jpg",
+      "description": "Les chips cuites au four saveur Jalapeño de Kettle ont une texture croustillante et une saveur épicée qui plaira aux amateurs de piments. Elles sont fabriquées avec des ingrédients simples et sont cuites lentement pour une texture croquante unique. Elles sont parfaites pour une collation ou pour accompagner un sandwich ou une salade.",
+      "details": {
+        "ingredients_principaux": [
+          "Pommes de terre",
+          "Huile de tournesol",
+          "Assaisonnement jalapeño (maltodextrine, sel de mer, sucre de canne, oignon en poudre, extrait de levure, piment jalapeño, ail en poudre, épices, acide lactique, arômes naturels, extrait de paprika)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 150,
+          "lipides": 9,
+          "glucides": 16,
+          "protéines": 2,
+          "sodium": 150,
+          "sucre": 1
+        }
+      },
+      "variations": [
+        {
+          "nom": "Chips cuites au four saveur Barbecue",
+          "image": "https://www.example.com/images/kettle-barbecue.jpg"
+        },
+        {
+          "nom": "Chips cuites au four saveur Sel de mer",
+          "image": "https://www.example.com/images/kettle-sel-de-mer.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ch004",
+      "nom": "Chips croustillantes saveur paprika",
+      "prix": 2.49,
+      "image": "https://www.example.com/images/crocky-paprika.jpg",
+      "description": "Les chips croustillantes saveur paprika de Crocky sont parfaites pour une collation salée. Fabriquées avec des pommes de terre sélectionnées, elles sont croustillantes à l'extérieur et moelleuses à l'intérieur. Leur goût légèrement épicé les rend irrésistibles. Elles sont idéales pour une soirée télé ou un apéritif entre amis.",
+      "details": {
+        "ingredients_principaux": [
+          "Pommes de terre",
+          "Huile de tournesol",
+          "Assaisonnement paprika (maltodextrine, sel de mer, sucre, poudre de tomate, oignon en poudre, extrait de levure, paprika fumé, épices, arôme naturel, acide citrique, extrait de paprika)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 150,
+          "lipides": 8,
+          "glucides": 17,
+          "protéines": 2,
+          "sodium": 180,
+          "sucre": 2
+        }
+      },
+      "variations": [
+        {
+          "nom": "Chips croustillantes saveur Barbecue",
+          "image": "https://www.example.com/images/crocky-barbecue.jpg"
+        },
+        {
+          "nom": "Chips croustillantes saveur Fromage",
+          "image": "https://www.example.com/images/crocky-fromage.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ch005",
+      "nom": "Chips ondulées saveur barbecue",
+      "prix": 1.99,
+      "image": "https://www.example.com/images/vico-barbecue.jpg",
+      "description": "Les chips ondulées saveur barbecue de Vico sont parfaites pour un apéritif réussi. Croustillantes et dorées, elles sont fabriquées avec des pommes de terre fraîches et sont assaisonnées d'un mélange délicieux de saveurs fumées et sucrées. Elles sont idéales pour accompagner une bière fraîche entre amis ou pour grignoter devant un match de foot.",
+      "details": {
+        "ingredients_principaux": [
+          "Pommes de terre",
+          "Huile de tournesol",
+          "Assaisonnement barbecue (sucre, sel, épices, oignon en poudre, tomate en poudre, arôme naturel, extrait de paprika, acide citrique, extrait de levure, colorant : extrait de paprika)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 160,
+          "lipides": 10,
+          "glucides": 17,
+          "protéines": 2,
+          "sodium": 180,
+          "sucre": 2
+        }
+      },
+      "variations": [
+        {
+          "nom": "Chips ondulées saveur nature",
+          "image": "https://www.example.com/images/vico-nature.jpg"
+        },
+        {
+          "nom": "Chips ondulées saveur paprika",
+          "image": "https://www.example.com/images/vico-paprika.jpg"
+        }
+      ]
+    }
+  ]
+}
