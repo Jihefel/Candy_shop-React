@@ -1,25 +1,25 @@
-.card-img-top
-    width: 100%
-    aspect-ratio: 1/1
-    object-fit: contain
-.variation-apercu
-    width: 100%
-    height: 120px
-    img
-        max-height: 120px
+.card
+    background: linear-gradient(to top, white 20%, #fc8f00, #e50086)
+    .card-img-top
         width: 100%
         aspect-ratio: 1/1
         object-fit: contain
-        object-position: center
-.card-header
-    color: #fff
-.price
-    color: #e50086
-    text-shadow: 0 0 2px white
-label
-    font-size: 0.7rem
-.card
-    background: linear-gradient(to top, white 20%, #fc8f00, #e50086)
+    .variation-apercu
+        width: 100%
+        height: 120px
+        img
+            max-height: 120px
+            width: 100%
+            aspect-ratio: 1/1
+            object-fit: contain
+            object-position: center
+    .card-header
+        color: #fff
+    .price
+        color: #e50086
+        text-shadow: 0 0 2px white
+    label
+        font-size: 0.7rem
     button
         color: black
         &:hover
@@ -30,3 +30,5 @@ label
             background-color: #fc8f00
         &:focus
             box-shadow: 0 0 0 0.25rem #fc8f0054
+    h6
+        font-weight: bold

@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const navbarSlice = createSlice ({
+export const isOnHomePage = createSlice ({
   name: 'isHome',
   initialState: {
     value: true
@@ -12,5 +12,5 @@ export const navbarSlice = createSlice ({
   }
 })
 
-export const {goOther, goHome} = navbarSlice.actions
-export default navbarSlice.reducer
+export const {goOther, goHome} = isOnHomePage.actions
+export default isOnHomePage.reducer

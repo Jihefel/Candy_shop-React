@@ -159,7 +159,7 @@
     },
 {
       "id": "bo005",
-      "nom": "Lutti Coca",
+      "nom": "Lutti",
       "prix": 1.99,
       "description": "Les bonbons Lutti sont des bonbons gélifiés en forme d'oursons, proposant une multitude de saveurs fruitées comme la cerise, la fraise, la pomme et bien d'autres encore. Leur texture douce et leur goût sucré en font un en-cas idéal pour les amateurs de sucreries.",
       "image": "bonbon/lutti/cola.png",
@@ -182,7 +182,7 @@
     },
       "variations": [
         {
-          "nom": "Cola",
+          "nom": "Cola Fizz",
           "image": "bonbon/lutti/cola.png"
         },
         {
@@ -839,7 +839,7 @@
         },
         {
           "nom": "Chips saveur Fromage et oignon",
-          "image": "chips/lays/lays-oignon.png"
+          "image": "chips/lays/fromage-oignon.png"
         }
       ]
     },

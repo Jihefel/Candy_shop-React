@@ -19,7 +19,7 @@ function Product(props) {
     <>
       <Card>
         <Card.Header>
-          <Card.Title>{typeOfProduct.nom} {(selectedProduct.nom === typeOfProduct.nom) ? (typeOfProduct.variations.length > 1 ? typeOfProduct.variations[0].nom : "") : selectedProduct.nom}</Card.Title>
+          <Card.Title className="my-2 text-center">{typeOfProduct.nom} {(selectedProduct.nom === typeOfProduct.nom) ? (typeOfProduct.variations.length > 1 ? typeOfProduct.variations[0].nom : "") : selectedProduct.nom}</Card.Title>
         </Card.Header>
         <Card.Img
           variant="top"

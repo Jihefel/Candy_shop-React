@@ -1,14 +1,21 @@
 nav
-    *
-        text-transform: uppercase
-        text-decoration: none
-        font-style: italic
-        font-size: 1.5rem
-        color: #e50086!important
+    .container
+        max-width: 75vw
     a
         padding: 8px
+        font-family: "Akwe Black"
+        text-decoration: none
+        font-size: 1.1rem
+        color: #e50086!important
+        text-transform: uppercase
+        &:hover
+            color: #fc8f00!important
+            *
+                color: #fc8f00!important
     .active
         color: #fc8f00!important
+        *
+            color: #fc8f00!important
     .dropdown
         height: 3rem
     .dropdown:hover .dropdown-menu
@@ -19,3 +26,9 @@ nav
         background: linear-gradient(#fc8f00, #e50086)
         a
             color: white!important
+    input
+        color: #e50086!important
+        background-color: transparent!important
+        height: 1rem
+    label
+        color: #fc8f00!important
