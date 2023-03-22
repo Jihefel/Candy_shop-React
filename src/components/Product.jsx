@@ -28,26 +28,6 @@ function Product(props) {
         <Card.Body>
           <h3 className="text-end">{typeOfProduct.prix}€</h3>
           <Form className="d-flex justify-content-around">
-            {/* <div className="d-flex flex-column">
-              <Form.Check
-                className="text-center"
-                type="radio"
-                name="variations"
-                id={selectedProduct.nom}
-                value={typeOfProduct.nom}
-                onClick={() => setSelectedProduct(typeOfProduct)}
-                defaultChecked
-              />
-              <div className="text-center">
-                <label htmlFor={typeOfProduct.nom} className="variation-apercu">
-                  <img
-                    src={require(`../assets/images/${typeOfProduct.image}`)}
-                    alt={typeOfProduct.nom}
-                  />
-                  {typeOfProduct.nom}
-                </label>
-              </div>
-            </div> */}
             {typeOfProduct.variations.map((vari, index) => (
               <div className="d-flex flex-column" key={index}>
                 <Form.Check

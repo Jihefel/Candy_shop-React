@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from "../assets/images/dall-e.png";
+import logo from "../assets/images/dall-e2.png";
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import data from "../assets/data/data.json"
@@ -17,7 +17,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="#home"><img src={logo} alt="" style={{height : "150px"}}/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className='d-flex'>
           <Nav className="mx-auto">
             <NavLink to="/">Home</NavLink>
             <NavDropdown title="Produits" id="basic-nav-dropdown" renderMenuOnMount={true} menuVariant="dark">

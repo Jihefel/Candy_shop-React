@@ -20,20 +20,35 @@ const router = createBrowserRouter([
         path: "bonbons",
         element: (
           <>
-            <Container>
-              {data.bonbons.map((bonbon, index) => (
                 <Row
                   xs={1}
                   md={3}
                   className="g-4 d-flex justify-content-between"
-                  key={index}
                 >
-                  <Col>
+              {data.bonbons.map((bonbon, index) => (
+                  <Col key={index}>
                     <Product key={bonbon.id} typeOfProduct={bonbon} />
                   </Col>
-                </Row>
               ))}
-            </Container>
+              </Row>
+          </>
+        ),
+      },
+      {
+        path: "barres_chocolatées",
+        element: (
+          <>
+                <Row
+                  xs={1}
+                  md={3}
+                  className="g-4 d-flex justify-content-between"
+                >
+              {data.barres_chocolatées.map((barre, index) => (
+              <Col key={index}>
+                <Product key={barre.id} typeOfProduct={barre} />
+              </Col>
+            ))}
+              </Row>
           </>
         ),
       },
