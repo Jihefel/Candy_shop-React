@@ -13,7 +13,20 @@
         object-position: center
 .card-header
     color: #fff
+.price
+    color: #e50086
+    text-shadow: 0 0 2px white
 label
     font-size: 0.7rem
 .card
-    background: linear-gradient(to top, #84fcfc 30%, #fc00dfcc 70%)
+    background: linear-gradient(to top, white 20%, #fc8f00, #e50086)
+    button
+        color: black
+        &:hover
+            color: #e50086
+    input[type='radio']
+        border-color: #fc8f00
+        &:checked
+            background-color: #fc8f00
+        &:focus
+            box-shadow: 0 0 0 0.25rem #fc8f0054

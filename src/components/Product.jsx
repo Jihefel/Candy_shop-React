@@ -4,7 +4,7 @@ import { useState } from "react";
 function Product(props) {
   const typeOfProduct = props.typeOfProduct;
 
-  const [selectedProduct, setSelectedProduct] = useState(typeOfProduct);
+  const [selectedProduct, setSelectedProduct] = useState(typeOfProduct.variations[0]);
 
   const handleSelectVariations = (e) => {
     const selectedVariation = typeOfProduct.variations.find(
@@ -26,7 +26,7 @@ function Product(props) {
           src={require(`../assets/images/${selectedProduct.image}`)}
         />
         <Card.Body>
-          <h3 className="text-end">{typeOfProduct.prix}€</h3>
+          <h1 className="text-end price">{typeOfProduct.prix}€</h1>
           <Form className="d-flex justify-content-around">
             {typeOfProduct.variations.map((vari, index) => (
               <div className="d-flex flex-column" key={index}>
@@ -86,7 +86,7 @@ function Product(props) {
           </Tabs>
         </Card.Body>
         <Card.Footer>
-          <Button variant="primary">Ajouter au panier</Button>
+          <Button variant="danger">Ajouter au panier</Button>
         </Card.Footer>
       </Card>
     </>

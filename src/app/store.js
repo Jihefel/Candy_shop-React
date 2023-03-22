@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import cardSlice from "../features/product/productSlice.js";
+import cardSlice from "../features/productSlice.js";
+import navbarSlice from "../features/navbarSlice.js";
 
 export const store = configureStore({
   reducer: {
-      card: cardSlice
+      selectedProduct: cardSlice,
+      isHome: navbarSlice
   }
 })
