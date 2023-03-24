@@ -5,7 +5,6 @@
       "nom": "Mentos",
       "prix": 1.49,
       "description": "Bonbons à la menthe avec une texture dure à l'extérieur et douce à l'intérieur.",
-      "image": "bonbon/mentos/mentos-mint.png",
       "banniere":"bonbon/mentos/banner.jpeg" ,
       "details": {
         "ingredients_principaux": [
@@ -39,7 +38,6 @@
       "nom": "Haribo",
       "prix": 1.99,
       "description": "Petits oursons gélifiés avec une texture douce et une variété de saveurs de fruits.",
-      "image": "bonbon/haribos/Haribo-Goldbears.png",
       "banniere":"bonbon/haribos/banner01.webp" ,
       "details": {
         "ingredients_principaux": [
@@ -78,7 +76,6 @@
       "nom": "Napoléon",
       "prix": 2.49,
       "description": "Les bonbons Napoléons sont des bonbons acidulés et durs, avec une texture croquante et rafraîchissante qui apaise l'haleine et leur goût est apprécié depuis des générations.",
-      "image": "bonbon/napoleons/citron.png",
       "details": {
         "ingredients_principaux": [
         "Sirop de glucose", 
@@ -120,7 +117,6 @@
       "nom": "Chupa Chups",
       "prix": 1.99,
       "description": "Les sucettes Chupa Chups sont des sucettes sphériques sur un bâtonnet en plastique, offrant une variété de saveurs fruitées et acidulées. Leur texture douce et leur forme reconnaissable en font un classique des confiseries pour petits et grands.",
-      "image": "bonbon/chupaChups/Strawberry.png",
       "details": {
         "ingredients_principaux": [
         "Sirop de glucose", 
@@ -162,7 +158,6 @@
       "nom": "Lutti",
       "prix": 1.99,
       "description": "Les bonbons Lutti sont des bonbons gélifiés en forme d'oursons, proposant une multitude de saveurs fruitées comme la cerise, la fraise, la pomme et bien d'autres encore. Leur texture douce et leur goût sucré en font un en-cas idéal pour les amateurs de sucreries.",
-      "image": "bonbon/lutti/cola.png",
       "details": {
         "ingredients_principaux": [
         "Sirop de glucose", 
@@ -201,7 +196,6 @@
       "id": "bc001",
       "nom": "Côte d'Or",
       "prix": 1.99,
-      "image": "chocolat/cote-dor/cotedor-noir-intense-70.png",
       "banniere":"chocolat/cote-dor/banner.png" ,
       "description": "Une barre de chocolat noir intense de qualité supérieure, fabriquée en Belgique avec des fèves de cacao soigneusement sélectionnées.",
       "details": {
@@ -243,7 +237,6 @@
       "id": "bc002",
       "nom": "Leonidas",
       "prix": 2.50,
-      "image": "chocolat/leonidas/leonidas-lait.png",
       "description": "Une délicieuse barre chocolatée au lait de qualité supérieure, fabriquée en Belgique avec du chocolat belge pur beurre de cacao.",
       "details": {
         "ingredients_principaux": [
@@ -289,7 +282,6 @@
       "id": "bc003",
       "nom": "Newtree",
       "prix": 3.00,
-      "image": "chocolat/newtree/newtree-noir.png",
       "description": "Une barre de chocolat noir bio et équitable de qualité supérieure, fabriquée en Belgique avec des fèves de cacao biologiques soigneusement sélectionnées.",
       "details": {
         "ingredients_principaux": [
@@ -326,7 +318,6 @@
       "id": "bc004",
       "nom": "Galler",
       "prix": 2.20,
-      "image": "chocolat/galler/galler-lait.png",
       "description": "Une délicieuse barre chocolatée au lait avec un cœur praliné fondant, fabriquée en Belgique avec du chocolat belge pur beurre de cacao.",
       "details": {
         "ingredients_principaux": [
@@ -365,7 +356,6 @@
       "id": "bc005",
       "nom": "Nestlé",
       "prix": 1.20,
-      "image": "chocolat/nestle/crunch-lait.webp",
       "description": "La barre chocolatée Crunch de Nestlé est un mélange unique de chocolat au lait croustillant et de riz soufflé. C'est un classique du genre, apprécié par les enfants et les adultes depuis des décennies.",
       "details": {
         "ingredients_principaux": [
@@ -410,7 +400,6 @@
       "id": "ed001",
       "nom": "Red Bull Energy Drink",
       "prix": 2.50,
-      "image": "energy/redbull/redbull.png",
       "banniere":"energy/redbull/banner.jpeg" ,
       "description": "Red Bull est une boisson énergisante populaire qui fournit une dose de caféine et d'autres ingrédients stimulants pour améliorer l'énergie, la concentration et les performances. La boisson a une saveur douce et acidulée, avec un goût légèrement amer caractéristique de la caféine.",
       "details": {
@@ -437,11 +426,15 @@
       },
       "variations": [
         {
-          "nom": "Red Bull Sugarfree Energy Drink",
+          "nom": "Classic",
+          "image": "energy/redbull/redbull.png"
+        },
+        {
+          "nom": "Sugarfree",
           "image": "energy/redbull/redbull-sugarfree.png"
         },
         {
-          "nom": "Red Bull Energy Drink Tropical",
+          "nom": "Tropical",
           "image": "energy/redbull/redbull-tropical.png"
         }
       ]
@@ -450,7 +443,6 @@
       "id": "ed002",
       "nom": "Monster Energy",
       "prix": 3.00,
-      "image": "energy/monster/monster.jpeg",
       "banniere":"energy/monster/banner.jpeg",
       "description": "Monster Energy est une boisson énergisante populaire qui contient une combinaison de caféine, de taurine, de guarana et d'autres ingrédients stimulants pour augmenter l'énergie, la concentration et les performances. La boisson a une saveur sucrée et fruitée, avec un arrière-goût légèrement amer.",
       "details": {
@@ -477,11 +469,15 @@
       },
       "variations": [
         {
-          "nom": "Monster Energy Ultra",
+          "nom": "Classic",
+          "image": "energy/monster/monster.jpeg"
+        },
+        {
+          "nom": "Ultra",
           "image": "energy/monster/monster-ultra.png"
         },
         {
-          "nom": "Monster Energy Assault",
+          "nom": "Assault",
           "image": "energy/monster/Monster-Assault.webp"
         }
       ]
@@ -490,7 +486,6 @@
       "id": "ed003",
       "nom": "Rockstar Energy Drink",
       "prix": 2.99,
-      "image": "energy/rockstar/rockstar.png",
       "description": "Rockstar Energy Drink est une boisson énergisante qui contient une combinaison de caféine, de taurine, de guarana et de ginseng pour augmenter l'énergie et la concentration. La boisson a une saveur légèrement sucrée avec des notes de fruits tropicaux et une texture effervescente.",
       "details": {
         "ingredients_principaux": [
@@ -521,20 +516,23 @@
       },
       "variations": [
         {
-          "nom": "Rockstar Sugar-Free",
+          "nom": "Classic",
+          "image": "energy/rockstar/rockstar.png"
+        },
+        {
+          "nom": "Sugar-Free",
           "image": "energy/rockstar/rockstarsugarfree.png"
         },
         {
-          "nom": "Rockstar Punched Energy + Guava Tropical Guava",
+          "nom": "Punched Energy + Guava Tropical Guava",
           "image": "energy/rockstar/rockstar-tropical.png"
         }
       ]
     },
     {
       "id": "ed004",
-      "nom": "Nalu Energy Drink",
+      "nom": "Nalu Energy",
       "prix": 1.99,
-      "image": "energy/nalu/nalu.png",
       "description": "Nalu Energy Drink est une boisson énergisante qui contient de la caféine, de la taurine, du guarana et de la vitamine B pour augmenter l'énergie et la concentration. La boisson a une saveur sucrée et fruitée avec des notes de fruits exotiques et une texture effervescente.",
       "details": {
         "ingredients_principaux": [
@@ -565,11 +563,15 @@
       },
       "variations": [
         {
-          "nom": "Nalu Sugar-Free",
+          "nom": "Classic",
+          "image": "energy/nalu/nalu.png"
+        },
+        {
+          "nom": "Sugar-Free",
           "image": "energy/nalu/nalu-sugarfree.png"
         },
         {
-          "nom": "Nalu Tropical Energy",
+          "nom": "Tropical Energy",
           "image": "energy/nalu/nalu-exotic.png"
         }
       ]
@@ -578,7 +580,6 @@
       "id": "ed005",
       "nom": "Burn Energy Drink",
       "prix": 2.75,
-      "image": "energy/burn/burn.png",
       "description": "Burn Energy Drink est une boisson énergisante qui contient une combinaison de caféine, de taurine, d'extrait de guarana et de vitamines B pour stimuler l'énergie et la concentration. La boisson a une saveur légèrement amère avec des notes de fruit rouge et une texture effervescente.",
       "details": {
         "ingredients_principaux": [
@@ -606,11 +607,15 @@
       },
       "variations": [
         {
-          "nom": "Burn Zero",
+          "nom": "Classic",
+          "image": "energy/burn/burn.png"
+        },
+        {
+          "nom": "Zero",
           "image": "energy/burn/burn-zero.png"
         },
         {
-          "nom": "Burn Energy Lemon Ice",
+          "nom": "Lemon Ice",
           "image": "energy/burn/burn-lemon-ice.jpeg"
         }
       ]
@@ -621,7 +626,6 @@
       "id": "co001",
       "nom": "Maltesers",
       "prix": 1.49,
-      "image": "confiseries/maltesers/maltesers.png",
       "banierre": "confiseries/maltesers/banner.jpeg",
       "description": "Maltesers sont des petites boules croustillantes au malt recouvertes de chocolat au lait. La texture légère et le goût sucré et chocolaté en font une confiserie populaire.",
       "details": {
@@ -653,20 +657,23 @@
       },
       "variations": [
         {
-          "nom": "Maltesers Teasers",
+          "nom": "Classic",
+          "image": "confiseries/maltesers/maltesers.png"
+        },
+        {
+          "nom": "Teasers",
           "image": "confiseries/maltesers/Maltesers-Teasers.png"
         },
         {
-          "nom": "Maltesers Buttons",
+          "nom": "Buttons",
           "image": "confiseries/maltesers/maltesers-buttons.webp"
         }
       ]
     },
     {
       "id": "co002",
-      "nom": "M&M's Peanut",
+      "nom": "M&M's",
       "prix": 1.99,
-      "image": "confiseries/m&m's/m&ms-peanut.png",
       "description": "M&M's Peanut est une confiserie croquante enrobée de chocolat au lait et remplie de cacahuètes grillées. Elle est vendue dans un sachet pratique pour une consommation individuelle ou partagée.",
       "details": {
         "ingredients_principaux": [
@@ -689,11 +696,15 @@
       },
       "variations": [
         {
-          "nom": "M&M's Choco",
+          "nom": "Peanut",
+          "image": "confiseries/m&m's/m&ms-peanut.png"
+        },
+        {
+          "nom": "Choco",
           "image": "confiseries/m&m's/m&ms-choco.png"
         },
         {
-          "nom": "M&M's Crispy",
+          "nom": "Crispy",
           "image": "confiseries/m&m's/m&ms-crispy.png"
         }
       ]
@@ -702,7 +713,6 @@
       "id": "co003",
       "nom": "Kinder Bueno",
       "prix": 1.29,
-      "image": "confiseries/kinderbueno/kinderbueno.jpeg",
       "banierre": "confiserie/kinderbueno/banner01.webp",
       "description": "Kinder Bueno est une barre chocolatée fourrée de crème de noisettes et croustillante à l'intérieur. Elle est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
       "details": {
@@ -731,11 +741,15 @@
       },
       "variations": [
         {
-          "nom": "Kinder Bueno White",
+          "nom": "Classic",
+          "image": "confiseries/kinderbueno/kinderbueno.jpeg"
+        },
+        {
+          "nom": "White",
           "image": "confiseries/kinderbueno/kinderbuen-blanc.webp"
         },
         {
-          "nom": "Kinder Bueno Dark",
+          "nom": "Dark",
           "image": "confiseries/kinderbueno/kinderbueno-dark.webp"
         }
       ]
@@ -744,7 +758,6 @@
       "id": "co004",
       "nom": "Milka Léo",
       "prix": 1.09,
-      "image": "confiseries/leoMilka/leo.png",
       "description": "Léo de Milka est une barre chocolatée composée d'une fine gaufrette croquante enrobée de chocolat au lait Milka. Cette confiserie est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
       "details": {
         "ingredients_principaux": [
@@ -770,7 +783,11 @@
       },
       "variations": [
         {
-          "nom": "Léo Choco blanc",
+          "nom": "Choco",
+          "image": "confiseries/leoMilka/leo.png"
+        },
+        {
+          "nom": "Choco blanc",
           "image": "confiseries/leoMilka/leoBlanc.png"
         }
       ]
@@ -779,7 +796,6 @@
       "id": "co005",
       "nom": "Kinder Country",
       "prix": 1.29,
-      "image": "confiseries/kinderCountry/kindercountry.webp",
       "description": "Kinder Country est une barre chocolatée croustillante composée de céréales soufflées, de lait et de chocolat au lait Kinder. Cette confiserie est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
       "details": {
         "ingredients_principaux": [
@@ -803,7 +819,11 @@
       },
       "variations": [
         {
-          "nom": "Kinder Country Mini",
+          "nom": "Classic",
+          "image": "confiseries/kinderCountry/kindercountry.webp"
+        },
+        {
+          "nom": "Mini",
           "image": "confiseries/kinderCountry/country-minis.png"
         }
       ]
@@ -812,9 +832,8 @@
   "chips": [
     {
       "id": "ch001",
-      "nom": "Lay's saveur Original",
+      "nom": "Lay's",
       "prix": 1.99,
-      "image": "chips/lays/lays-natural.png",
       "banierre": "chips/lays/banner.jpeg",
       "description": "Les chips saveur Original de Lays sont des chips croustillantes et légèrement salées. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
       "details": {
@@ -834,20 +853,23 @@
       },
       "variations": [
         {
-          "nom": "Chips saveur Barbecue",
+          "nom": "saveur Original",
+          "image": "chips/lays/lays-natural.png"
+        },
+        {
+          "nom": "saveur Barbecue",
           "image": "chips/lays/lays-bbq.png"
         },
         {
-          "nom": "Chips saveur Fromage et oignon",
+          "nom": "saveur Fromage et oignon",
           "image": "chips/lays/fromage-oignon.png"
         }
       ]
     },
     {
       "id": "ch002",
-      "nom": "Pringles Original",
+      "nom": "Pringles",
       "prix": 2.49,
-      "image": "chips/pringles/original.png",
       "banierre":"chips/pringles/banner.jpeg",
       "description": "Les chips saveur Original de Pringles sont des chips croustillantes et légèrement salées. Leur forme unique et leur texture croquante les rendent très populaires auprès des amateurs de chips. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
       "details": {
@@ -874,20 +896,23 @@
       },
       "variations": [
         {
-          "nom": "Chips saveur Barbecue",
+          "nom": "saveur Original",
+          "image": "chips/pringles/original.png"
+        },
+        {
+          "nom": "saveur Barbecue",
           "image": "chips/pringles/bbq.png"
         },
         {
-          "nom": "Chips saveur Fromage",
+          "nom": "saveur Fromage",
           "image": "chips/pringles/fromage.avif"
         }
       ]
     },
     {
       "id": "ch003",
-      "nom": "Chips cuites au four saveur Jalapeño",
+      "nom": "Kettle",
       "prix": 3.99,
-      "image": "chips/cuite-au-four/jalepenos.png",
       "description": "Les chips cuites au four saveur Jalapeño de Kettle ont une texture croustillante et une saveur épicée qui plaira aux amateurs de piments. Elles sont fabriquées avec des ingrédients simples et sont cuites lentement pour une texture croquante unique. Elles sont parfaites pour une collation ou pour accompagner un sandwich ou une salade.",
       "details": {
         "ingredients_principaux": [
@@ -906,20 +931,23 @@
       },
       "variations": [
         {
-          "nom": "Chips cuites au four saveur Barbecue",
+          "nom": "cuites au four saveur Jalapeño",
+          "image": "chips/cuite-au-four/jalepenos.png"
+        },
+        {
+          "nom": "cuites au four saveur Barbecue",
           "image": "chips/cuite-au-four/bbq.png"
         },
         {
-          "nom": "Chips cuites au four saveur Fromage",
+          "nom": "cuites au four saveur Fromage",
           "image": "chips/cuite-au-four/fromage.png"
         }
       ]
     },
     {
       "id": "ch004",
-      "nom": "Chips croustillantes saveur paprika",
+      "nom": "Crocky",
       "prix": 2.49,
-      "image": "chips/crocky/paprika.png",
       "description": "Les chips croustillantes saveur paprika de Crocky sont parfaites pour une collation salée. Fabriquées avec des pommes de terre sélectionnées, elles sont croustillantes à l'extérieur et moelleuses à l'intérieur. Leur goût légèrement épicé les rend irrésistibles. Elles sont idéales pour une soirée télé ou un apéritif entre amis.",
       "details": {
         "ingredients_principaux": [
@@ -938,20 +966,23 @@
       },
       "variations": [
         {
-          "nom": "Chips croustillantes saveur Barbecue",
+          "nom": "croustillantes saveur paprika",
+          "image": "chips/crocky/paprika.png"
+        },
+        {
+          "nom": "croustillantes saveur Barbecue",
           "image": "chips/crocky/bbq.png"
         },
         {
-          "nom": "Chips croustillantes saveur Fromage",
+          "nom": "croustillantes saveur Fromage",
           "image": "chips/crocky/fromage.png"
         }
       ]
     },
     {
       "id": "ch005",
-      "nom": "Chips ondulées saveur barbecue",
+      "nom": "Vico",
       "prix": 1.99,
-      "image": "chips/vico/bbq.png",
       "description": "Les chips ondulées saveur barbecue de Vico sont parfaites pour un apéritif réussi. Croustillantes et dorées, elles sont fabriquées avec des pommes de terre fraîches et sont assaisonnées d'un mélange délicieux de saveurs fumées et sucrées. Elles sont idéales pour accompagner une bière fraîche entre amis ou pour grignoter devant un match de foot.",
       "details": {
         "ingredients_principaux": [
@@ -970,11 +1001,15 @@
       },
       "variations": [
         {
-          "nom": "Chips ondulées saveur nature",
+          "nom": "ondulées saveur barbecue",
+          "image": "chips/vico/bbq.png"
+        },
+        {
+          "nom": "ondulées saveur nature",
           "image": "chips/vico/nature.png"
         },
         {
-          "nom": "Chips ondulées saveur paprika",
+          "nom": "ondulées saveur paprika",
           "image": "chips/vico/paprika.png"
         }
       ]

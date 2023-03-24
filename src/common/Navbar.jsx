@@ -4,14 +4,13 @@ import {
   Nav,
   Button,
   Form,
-  FloatingLabel,
   Badge,
 } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import data from "../assets/data/data.json";
 import logo from "../assets/images/dall-e3.png";
 import { goOther, goHome } from "../features/Navbar/isOnHomePage";
-import { setUser, setUserFromEvent } from "../features/Navbar/userName";
+import { setUser } from "../features/Navbar/userName";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 // Icons
@@ -56,7 +55,7 @@ function NavBar() {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#home" className="me-0">
           <img src={logo} alt="" style={{ height: "150px" }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -81,11 +80,10 @@ function NavBar() {
               </NavLink>
             ))}
           </Nav>
-          <Nav className="d-flex flex-column">
+          <Nav className="d-flex flex-column align-items-center nav-right">
             {typeOfButton === "button" ? (
               isConnected === false ? (
                 <button
-                  as="input"
                   type={typeOfButton}
                   className="connection-button d-flex align-items-center gap-2 text-capitalize"
                   onClick={() => setTypeOfButton(null)}
@@ -93,40 +91,32 @@ function NavBar() {
                   <FaUserSecret /> Invité
                 </button>
               ) : (
-                <div className="nav-right d-flex gap-2">
+                <div className="d-flex gap-2">
                   <button
-                    as="input"
                     type="button"
                     className="connection-button d-flex align-items-center gap-2 text-capitalize"
                     onClick={deconnexion}
                   >
                     <FaUserCheck /> {username}
                   </button>
-                  <Button variant="primary">
+                  <Button className="button-panier rounded-4">
                   <HiShoppingCart/> <Badge bg="secondary"></Badge>
                     <span className="visually-hidden">unread messages</span>
                   </Button>
                 </div>
               )
             ) : (
-              <Form onSubmit={handleSubmit} noValidate autoComplete="off">
-                <FloatingLabel
-                  controlId="floatingInput"
-                  label="Pseudo"
-                  className="mb-3 text-capitalize"
-                >
+              <Form onSubmit={handleSubmit} noValidate autoComplete="off" className="ms-4">
+                <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Control type="text" placeholder="Pseudo" required />
-                </FloatingLabel>
-                <FloatingLabel
-                  controlId="floatingPassword"
-                  label="Mot de passe"
-                >
+                </Form.Group>
+                 <Form.Group className="mb-3" controlId="formBasicPassword">
                   <Form.Control
                     type="password"
                     placeholder="Mot de passe"
                     required
                   />
-                </FloatingLabel>
+                </Form.Group>
                 <Button type="submit" className="d-none"></Button>
               </Form>
             )}

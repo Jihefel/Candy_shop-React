@@ -16,7 +16,7 @@ function Product(props) {
   };
 
   return (
-    <>
+    <div className="products">
       <Card>
         <Card.Header>
           <Card.Title className="my-2 text-center">{typeOfProduct.nom} {(selectedProduct.nom === typeOfProduct.nom) ? (typeOfProduct.variations.length > 1 ? typeOfProduct.variations[0].nom : "") : selectedProduct.nom}</Card.Title>
@@ -89,7 +89,7 @@ function Product(props) {
           <Button variant="danger">Ajouter au panier</Button>
         </Card.Footer>
       </Card>
-    </>
+    </div>
   );
 }
 

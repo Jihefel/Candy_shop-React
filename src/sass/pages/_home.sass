@@ -1,7 +1,35 @@
-.carousel-caption
-    background: linear-gradient(transparent 20%, #000000 100%, transparent)
-    border-radius: 20px
-    height: 50%
-    display: flex
-    flex-direction: column
-    justify-content: flex-end
+.carousel
+    width: 100%
+    .carousel-item
+        height: 40dvh
+        img
+            object-fit: cover
+            height: 100%
+        .carousel-caption
+            background: linear-gradient(transparent 20%, #000000 100%, transparent)
+            height: 50%
+            width: 100%
+            position: absolute
+            left: 0
+            bottom: 0
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+    // .carousel-control-prev
+    //     position: absolute
+    //     left: -150px
+    // .carousel-control-next
+    //     position: absolute
+    //     right: -150px
+    .carousel-indicators
+        margin-bottom: 5px
+        button
+            border-radius: 50%
+            height: 10px!important
+            width: 10px!important
+
+.welcome
+    color: #460106
+    font-family: "Akwe Black"
+    *
+        font-family: "Akwe Black"
