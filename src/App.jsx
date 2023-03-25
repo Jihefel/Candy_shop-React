@@ -1,6 +1,7 @@
 import Product from "./common/Product";
 import NavBar from "./common/Navbar";
 import Home from "./pages/Home";
+import Cart from './pages/Cart';
 import Error from './common/Error';
 import { Row, Col } from "react-bootstrap";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -85,6 +86,12 @@ function App() {
                 ))}
               </Row>
             </>
+          ),
+        },
+        {
+          path: "cart",
+          element: (
+            <Cart />
           ),
         },
       ],

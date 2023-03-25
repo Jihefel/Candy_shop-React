@@ -6,10 +6,22 @@ export const articlesSlice = createSlice ({
     items: []
   },
   // A CHANGER SELON LE PROJET
-  reducers : {
-    addArticle: (state, action) => {state.value = state.push(action.payload)},
-    deleteArticle: (state, action) => {state.value = state - 1}
+  reducers: {
+    addArticle: (state, action) => {
+      return {
+        ...state,
+        items: [...state.items, action.payload]
+      }
+    },
+    deleteArticle: (state, action) => {
+      return {
+        ...state,
+        items: state.items.filter(item => item !== action.payload)
+      }
+    }
   }
+  
+  
 })
 
 export const {addArticle, deleteArticle} = articlesSlice.actions

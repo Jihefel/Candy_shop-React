@@ -7,8 +7,8 @@ export const numberArticleSlice = createSlice ({
   },
   // A CHANGER SELON LE PROJET
   reducers : {
-    increment: (state) => {state.value = state + 1},
-    decrement: (state) => {state.value = state - 1}
+    increment: (state) => {state.value += 1},
+    decrement: (state) => {state.value -= 1}
   }
 })
 

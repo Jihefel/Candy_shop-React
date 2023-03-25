@@ -5,14 +5,18 @@ import {
   Button,
   Form,
   Badge,
+  OverlayTrigger,
+  Popover
 } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import data from "../assets/data/data.json";
 import logo from "../assets/images/dall-e3.png";
 import { goOther, goHome } from "../features/Navbar/isOnHomePage";
+import { connection, deconnection } from "../features/Navbar/isConnectedSlice";
 import { setUser } from "../features/Navbar/userName";
 import { useSelector, useDispatch } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Cart from "./../pages/Cart";
 // Icons
 import { TiHome } from "react-icons/ti";
 import { TbCandy } from "react-icons/tb";
@@ -27,10 +31,13 @@ import {
 
 function NavBar() {
   const [typeOfButton, setTypeOfButton] = useState("button");
-  const [isConnected, setIsConnected] = useState(false);
 
   const username = useSelector((state) => state.username.value);
+  const numberArticle = useSelector((state) => state.numberArticle.value);
+  const connectionStatus = useSelector((state) => state.isConnected.status);
+
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const icons = [
     <TbCandy />,
@@ -40,24 +47,44 @@ function NavBar() {
     <GiChipsBag />,
   ];
 
+  const [navbarBgColor, setNavbarBgColor] = useState("transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 1) {
+        setNavbarBgColor("linear-gradient(to top, white 20%, #fc8f00)");
+      } else {
+        setNavbarBgColor("transparent");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(setUser(event.target[0].value));
     setTypeOfButton("button");
-    setIsConnected(true);
+    dispatch(connection());
   };
 
   const deconnexion = () => {
     dispatch(setUser("Invité"));
-    setIsConnected(false);
+    dispatch(deconnection());
   };
 
+
+
   return (
-    <Navbar expand="lg">
+    <Navbar expand="lg" sticky="top" style={{ background: navbarBgColor }}>
       <Container>
-        <Navbar.Brand href="#home" className="me-0">
-          <img src={logo} alt="" style={{ height: "150px" }} />
-        </Navbar.Brand>
+        <Link to="/">
+          <Navbar.Brand className="me-0">
+            <img src={logo} alt="" style={{ height: "150px" }} />
+          </Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
@@ -82,7 +109,7 @@ function NavBar() {
           </Nav>
           <Nav className="d-flex flex-column align-items-center nav-right">
             {typeOfButton === "button" ? (
-              isConnected === false ? (
+              connectionStatus === false ? (
                 <button
                   type={typeOfButton}
                   className="connection-button d-flex align-items-center gap-2 text-capitalize"
@@ -99,18 +126,37 @@ function NavBar() {
                   >
                     <FaUserCheck /> {username}
                   </button>
-                  <Button className="button-panier rounded-4">
-                  <HiShoppingCart/> <Badge bg="secondary"></Badge>
-                    <span className="visually-hidden">unread messages</span>
-                  </Button>
+                  <OverlayTrigger
+                    placement="bottom"
+                    overlay={
+                      <Popover>
+                        <Popover.Body>
+                          <strong>{username.at(0).toUpperCase() + username.substring(1).toLowerCase()}</strong> vous avez <strong>{numberArticle}</strong> article{numberArticle > 1 ? "s" : ""} dans votre panier.
+                          Cliquez ici pour plus de détails.
+                        </Popover.Body>
+                      </Popover>
+                    }
+                  >
+                    <Button className="button-panier rounded-4 d-flex align-items-center gap-2" onClick={()=> navigate("cart")}>
+                      <HiShoppingCart />{" "}
+                      <Badge bg="secondary" className="align-self-center top-0">
+                        {numberArticle}
+                      </Badge>
+                    </Button>
+                  </OverlayTrigger>
                 </div>
               )
             ) : (
-              <Form onSubmit={handleSubmit} noValidate autoComplete="off" className="ms-4">
+              <Form
+                onSubmit={handleSubmit}
+                noValidate
+                autoComplete="off"
+                className="ms-4"
+              >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Control type="text" placeholder="Pseudo" required />
                 </Form.Group>
-                 <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                   <Form.Control
                     type="password"
                     placeholder="Mot de passe"

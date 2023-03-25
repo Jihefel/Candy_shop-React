@@ -1,10 +1,19 @@
-import { Button, Card, Tab, Tabs, Table, Form } from "react-bootstrap";
-import { useState } from "react";
+import { Button, Card, Tab, Tabs, Table, Form, OverlayTrigger } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addArticle, deleteArticle } from "../features/Cart/articlesSlice";
+import { increment, decrement } from "../features/Navbar/numberArticle";
 
 function Product(props) {
   const typeOfProduct = props.typeOfProduct;
-
+  
+  const panier = useSelector((state) => state.articles.items)
+  const connectionStatus = useSelector((state) => state.isConnected.status);
   const [selectedProduct, setSelectedProduct] = useState(typeOfProduct.variations[0]);
+
+  const dispatch = useDispatch()
+  const [articlesDansPanier, setArticlesDansPanier] = useState([]);
+
 
   const handleSelectVariations = (e) => {
     const selectedVariation = typeOfProduct.variations.find(
@@ -15,11 +24,23 @@ function Product(props) {
     }
   };
 
+  const addArticleToCart = (article) => {
+    if (connectionStatus) {
+      dispatch(addArticle(article));
+      dispatch(increment())
+      setArticlesDansPanier(panier);
+    } else {
+      alert("Connectez vous pour ajouter un article au panier")
+    }
+  }
+
+  const nomEntier = typeOfProduct.nom + " " + (selectedProduct.nom === typeOfProduct.nom ? (typeOfProduct.variations.length > 1 ? typeOfProduct.variations[0].nom : "") : selectedProduct.nom)
+
   return (
     <div className="products">
       <Card>
         <Card.Header>
-          <Card.Title className="my-2 text-center">{typeOfProduct.nom} {(selectedProduct.nom === typeOfProduct.nom) ? (typeOfProduct.variations.length > 1 ? typeOfProduct.variations[0].nom : "") : selectedProduct.nom}</Card.Title>
+          <Card.Title className="my-2 text-center">{nomEntier}</Card.Title>
         </Card.Header>
         <Card.Img
           variant="top"
@@ -86,7 +107,7 @@ function Product(props) {
           </Tabs>
         </Card.Body>
         <Card.Footer>
-          <Button variant="danger">Ajouter au panier</Button>
+          <Button variant="danger" onClick={()=> addArticleToCart([typeOfProduct, selectedProduct])}>Ajouter au panier</Button>
         </Card.Footer>
       </Card>
     </div>
