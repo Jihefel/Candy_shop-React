@@ -6,12 +6,7 @@ export const cardSlice = createSlice ({
   initialState: {
     value: data.bonbons
   },
-  // A CHANGER SELON LE PROJET
-  reducers : {
-    increment: (state) => {state.value += 1},
-    decrement: (state) => {state.value -= 1}
-  }
+  reducers : {}
 })
 
-export const {increment, decrement} = cardSlice.actions
 export default cardSlice.reducer

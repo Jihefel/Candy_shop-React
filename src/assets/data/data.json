@@ -24,11 +24,15 @@
       },
       "variations": [
         {
+          "id": "bo001a",
           "nom": "Menthe",
+          "quantity": 1,
           "image": "bonbon/mentos/mentos-mint.png"
         },
         {
+          "id": "bo001b",
           "nom": "Fruit",
+          "quantity": 1,
           "image": "bonbon/mentos/mentos-fruit.png"
         }
       ]
@@ -58,15 +62,21 @@
       },
       "variations": [
         {
+          "id": "bo002a",
           "nom": "Oursons d'or",
+          "quantity": 1,
           "image": "bonbon/haribos/Haribo-Goldbears.png"
         },
         {
+          "id": "bo002b",
           "nom": "Happy Cherries",
+          "quantity": 1,
           "image": "bonbon/haribos/cherries.webp"
         },
         {
+          "id": "bo002c",
           "nom": "Dragibus",
+          "quantity": 1,
           "image": "bonbon/haribos/dragibus.png"
         }
       ]
@@ -95,19 +105,27 @@
     },
       "variations": [
         {
+          "id": "bo003a",
           "nom": "Citron",
+          "quantity": 1,
           "image": "bonbon/napoleons/citron.png"
         },
         {
+          "id": "bo003b",
           "nom": "Framboise",
+          "quantity": 1,
           "image": "bonbon/napoleons/framboise.png"
         },
         {
+          "id": "bo003c",
           "nom": "Fruit Rouges",
+          "quantity": 1,
           "image": "bonbon/napoleons/fruitsrouge.png"
         },
         {
+          "id": "bo003d",
           "nom": "Tropical",
+          "quantity": 1,
           "image": "bonbon/napoleons/tropical.png"
         }
       ]
@@ -136,19 +154,27 @@
     },
       "variations": [
         {
+          "id": "bo004a",
           "nom": "Fraise",
+          "quantity": 1,
           "image": "bonbon/chupaChups/Strawberry.png"
         },
         {
+          "id": "bo004b",
           "nom": "Cola",
+          "quantity": 1,
           "image": "bonbon/chupaChups/Cola.png"
         },
         {
+          "id": "bo004c",
           "nom": "Pomme",
+          "quantity": 1,
           "image": "bonbon/chupaChups/pomme.png"
         },
         {
+          "id": "bo004d",
           "nom": "Cerise",
+          "quantity": 1,
           "image": "bonbon/chupaChups/cherry.png"
         }
       ]
@@ -177,15 +203,21 @@
     },
       "variations": [
         {
+          "id": "bo005a",
           "nom": "Cola Fizz",
+          "quantity": 1,
           "image": "bonbon/lutti/cola.png"
         },
         {
+          "id": "bo005b",
           "nom": "Long Fizz",
+          "quantity": 1,
           "image": "bonbon/lutti/longFizz.png"
         },
         {
+          "id": "bo005c",
           "nom": "Arlequins",
+          "quantity": 1,
           "image": "bonbon/lutti/arlequins.png"
         }
       ]
@@ -216,7 +248,9 @@
       },
       "variations": [
         {
+          "id": "bc001a",
           "nom": "Noir 70% Intense",
+          "quantity": 1,
           "image": "chocolat/cote-dor/cotedor-noir-intense-70.png"
         },
         {
@@ -305,8 +339,8 @@
           "image": "chocolat/newtree/newtree-noir.png"
         },
         {
-          "nom": "Barre Chocolatée Lait Bio",
-          "image": "chocolat/newtree/newtree-lait.jpg"
+          "nom": "Barre Chocolatée Lait Orange Bio",
+          "image": "chocolat/newtree/orange_tablette_transp.png"
         },
         {
           "nom": "Barre Chocolatée Noir 72% Bio",

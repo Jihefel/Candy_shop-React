@@ -2,17 +2,15 @@ import { Button, Card, Tab, Tabs, Table, Form, OverlayTrigger } from "react-boot
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addArticle, deleteArticle } from "../features/Cart/articlesSlice";
-import { increment, decrement } from "../features/Navbar/numberArticle";
+import { MdAddShoppingCart } from "react-icons/md"
 
 function Product(props) {
   const typeOfProduct = props.typeOfProduct;
   
-  const panier = useSelector((state) => state.articles.items)
   const connectionStatus = useSelector((state) => state.isConnected.status);
   const [selectedProduct, setSelectedProduct] = useState(typeOfProduct.variations[0]);
 
   const dispatch = useDispatch()
-  const [articlesDansPanier, setArticlesDansPanier] = useState([]);
 
 
   const handleSelectVariations = (e) => {
@@ -24,11 +22,10 @@ function Product(props) {
     }
   };
 
+
   const addArticleToCart = (article) => {
     if (connectionStatus) {
       dispatch(addArticle(article));
-      dispatch(increment())
-      setArticlesDansPanier(panier);
     } else {
       alert("Connectez vous pour ajouter un article au panier")
     }
@@ -45,9 +42,10 @@ function Product(props) {
         <Card.Img
           variant="top"
           src={require(`../assets/images/${selectedProduct.image}`)}
+          loading="lazy"
         />
         <Card.Body>
-          <h1 className="text-end price">{typeOfProduct.prix}€</h1>
+          <h1 className="text-end price">{typeOfProduct.prix.toFixed(2)}€</h1>
           <Form className="d-flex justify-content-around">
             {typeOfProduct.variations.map((vari, index) => (
               <div className="d-flex flex-column" key={index}>
@@ -107,7 +105,7 @@ function Product(props) {
           </Tabs>
         </Card.Body>
         <Card.Footer>
-          <Button variant="danger" onClick={()=> addArticleToCart([typeOfProduct, selectedProduct])}>Ajouter au panier</Button>
+          <Button variant="pink" onClick={()=> addArticleToCart([typeOfProduct, selectedProduct])}><MdAddShoppingCart /> Ajouter au panier</Button>
         </Card.Footer>
       </Card>
     </div>

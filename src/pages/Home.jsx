@@ -1,11 +1,18 @@
-import { Container, Carousel, Row, Col, InputGroup, Form } from "react-bootstrap";
+import {
+  Container,
+  Carousel,
+  Row,
+  Col,
+  InputGroup,
+  Form,
+} from "react-bootstrap";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { goOther, goHome } from "../features/Navbar/isOnHomePage";
 import data from "../assets/data/data.json";
 import { useState, useEffect } from "react";
 import Product from "../common/Product";
-import { IoMdSearch } from "react-icons/io"
+import { IoMdSearch } from "react-icons/io";
 
 function Home() {
   const isHome = useSelector((state) => state.isHome.value);
@@ -32,46 +39,40 @@ function Home() {
     }
   }, [location]);
 
+  const [typesDeProduitsAAfficher, setTypesDeProduitsAAfficher] = useState(
+    Object.values(data)
+  );
+  let produitsArray = [];
 
-  const [typesDeProduitsAAfficher, setTypesDeProduitsAAfficher ] = useState(Object.values(data));
-  let produitsArray = []
+  const dataCopy = [...Object.values(data)];
+  dataCopy.forEach((type) => {
+    type.forEach((produit) => {
+      produitsArray.push(produit);
+    });
+  });
 
-  const dataCopy = [...(Object.values(data))]
-  dataCopy.forEach(type => {
-    type.forEach(produit => {
-      produitsArray.push(produit)
-    })
-  })
-
-  let typeDeProduitsFiltres = []
+  const [produitsFiltres, setProduitsFiltres] = useState([]);
 
   const handleSearch = (event) => {
-    produitsArray.forEach(produit => {
-      if(produit.nom.toLowerCase().includes(event.target.value.toLowerCase())) {
-        switch (true) {
-          case (produit.id.includes("bo")):
-            typeDeProduitsFiltres.push("bonbons")
-            break;
-          case (produit.id.includes("bc")):
-            typeDeProduitsFiltres.push("barres_chocolatées")
-            break;
-          case (produit.id.includes("ed")):
-            typeDeProduitsFiltres.push("energy_drinks")
-            break;
-          case (produit.id.includes("co")):
-            typeDeProduitsFiltres.push("confiseries")
-            break;
-          case (produit.id.includes("ch")):
-            typeDeProduitsFiltres.push("chips")
-            break;
+    const searchValue = event.target.value.toLowerCase();
 
-          default:
-            break;
+    setProduitsFiltres(
+      produitsArray.filter((produit) => {
+        // Vérifier si le nom du produit inclut la valeur de recherche
+        if (produit.nom.toLowerCase().includes(searchValue)) {
+          return true;
         }
-      } 
-    })
-  }
-  
+
+        // Vérifier si le nom d'une variation inclut la valeur de recherche
+        for (const variation of produit.variations) {
+          if (variation.nom.toLowerCase().includes(searchValue)) {
+            return true;
+          }
+        }
+        return false;
+      })
+    );
+  };
 
   return (
     <>
@@ -99,6 +100,7 @@ function Home() {
                     className="d-block w-100"
                     src={require(`../assets/images/${produit.banniere}`)}
                     alt="First slide"
+                    loading="lazy"
                   />
                   <Carousel.Caption className="px-5">
                     <h3>{produit.nom}</h3>
@@ -115,13 +117,36 @@ function Home() {
               aria-describedby="basic-addon1"
               onChange={handleSearch}
             />
-            <InputGroup.Text id="basic-addon1"><IoMdSearch/></InputGroup.Text>
+            <InputGroup.Text id="basic-addon1">
+              <IoMdSearch />
+            </InputGroup.Text>
           </InputGroup>
-          <Row xs={2} md={5} className="g-0">
-            {typesDeProduitsAAfficher.map((types) =>
-              types.map((type) => (
-                <Col key={type.id} className="m-0">
-                  <Product typeOfProduct={type} />
+          <Row
+            xs={2}
+            md={5}
+            className={
+              "g-0 d-flex justify-content-center " +
+              (produitsFiltres.length === 0
+                ? ""
+                : produitsFiltres.length < 5
+                ? "gap-4"
+                : "")
+            }
+          >
+            {produitsFiltres.length === 0 ? (
+              Object.values(data).map((types) =>
+                types.map((type) => (
+                  <Col key={type.id} className="m-0">
+                    <Product typeOfProduct={type} />
+                  </Col>
+                ))
+              )
+            ) : produitsFiltres === "no" ? (
+              <h1>no</h1>
+            ) : (
+              produitsFiltres.map((prod) => (
+                <Col key={prod.id} className="m-0">
+                  <Product typeOfProduct={prod} />
                 </Col>
               ))
             )}

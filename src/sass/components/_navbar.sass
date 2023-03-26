@@ -8,6 +8,7 @@ nav
         font-size: 1.1rem
         color: #e50086!important
         text-transform: uppercase
+        transition: 0.2s
         &:hover
             color: #fc8f00!important
             *
@@ -32,9 +33,20 @@ nav
 
     label
         color: #fc8f00!important
-    button
-        padding: 4% 8%
-        width: fit-content
-        border-radius: 30px
     .nav-right
         width: 200px
+        button
+            padding: 0.75rem 1.5rem
+            width: fit-content
+            border-radius: 30px
+            background-color: #e50086
+            border: 2px solid white
+            color: white!important
+            outline: none
+            transition: 0.2s
+            &:hover
+                background-color: #b6006a
+.popover
+    max-width: 100%!important
+    .list-group
+        width: 100%

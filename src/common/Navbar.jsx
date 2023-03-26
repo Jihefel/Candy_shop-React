@@ -6,13 +6,18 @@ import {
   Form,
   Badge,
   OverlayTrigger,
-  Popover
+  Popover,
+  ListGroup,
+  CloseButton,
+  InputGroup,
+  FormControl,
 } from "react-bootstrap";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import data from "../assets/data/data.json";
 import logo from "../assets/images/dall-e3.png";
 import { goOther, goHome } from "../features/Navbar/isOnHomePage";
 import { connection, deconnection } from "../features/Navbar/isConnectedSlice";
+import { emptyCart } from "../features/Cart/articlesSlice";
 import { setUser } from "../features/Navbar/userName";
 import { useSelector, useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
@@ -20,7 +25,7 @@ import Cart from "./../pages/Cart";
 // Icons
 import { TiHome } from "react-icons/ti";
 import { TbCandy } from "react-icons/tb";
-import { FaUserSecret, FaUserCheck } from "react-icons/fa";
+import { FaUserSecret, FaUserCheck, FaUserTimes } from "react-icons/fa";
 import { HiShoppingCart } from "react-icons/hi";
 import {
   GiChocolateBar,
@@ -32,9 +37,11 @@ import {
 function NavBar() {
   const [typeOfButton, setTypeOfButton] = useState("button");
 
+  const panier = useSelector((state) => state.articles.items);
   const username = useSelector((state) => state.username.value);
-  const numberArticle = useSelector((state) => state.numberArticle.value);
   const connectionStatus = useSelector((state) => state.isConnected.status);
+
+  const [iconConnection, setIconConnection] = useState(<FaUserCheck />);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -73,6 +80,8 @@ function NavBar() {
   const deconnexion = () => {
     dispatch(setUser("Invité"));
     dispatch(deconnection());
+    dispatch(emptyCart());
+    setIconConnection(<FaUserCheck />);
   };
 
 
@@ -123,24 +132,32 @@ function NavBar() {
                     type="button"
                     className="connection-button d-flex align-items-center gap-2 text-capitalize"
                     onClick={deconnexion}
+                    onMouseEnter={() => setIconConnection(<FaUserTimes />)}
+                    onMouseLeave={() => setIconConnection(<FaUserCheck />)}
                   >
-                    <FaUserCheck /> {username}
+                    {iconConnection} {username}
                   </button>
                   <OverlayTrigger
                     placement="bottom"
                     overlay={
-                      <Popover>
+                      <Popover id="cart-preview">
                         <Popover.Body>
-                          <strong>{username.at(0).toUpperCase() + username.substring(1).toLowerCase()}</strong> vous avez <strong>{numberArticle}</strong> article{numberArticle > 1 ? "s" : ""} dans votre panier.
-                          Cliquez ici pour plus de détails.
+                          <Cart />
                         </Popover.Body>
                       </Popover>
                     }
                   >
-                    <Button className="button-panier rounded-4 d-flex align-items-center gap-2" onClick={()=> navigate("cart")}>
+                    <Button
+                      className="button-panier d-flex align-items-center gap-2"
+                      onClick={() => navigate("cart")}
+                      variant="pink"
+                    >
                       <HiShoppingCart />{" "}
-                      <Badge bg="secondary" className="align-self-center top-0">
-                        {numberArticle}
+                      <Badge
+                        bg="orange"
+                        className="align-self-center top-0 text-dark"
+                      >
+                        {panier.length}
                       </Badge>
                     </Button>
                   </OverlayTrigger>

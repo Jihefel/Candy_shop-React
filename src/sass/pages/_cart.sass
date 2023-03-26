@@ -1,3 +1,19 @@
 .cart
     .list-group
-        background: linear-gradient(to top, white 20%, #fc8f00, #e50086)
+        background: linear-gradient(white 20%, #fc8f00)
+        .quantity
+            width: fit-content
+            input[type=number]
+                width: 60px
+                -moz-appearance: textfield
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button
+                -webkit-appearance: none
+                margin: 0
+        
+
+.backHome
+    text-decoration: none
+    color: $pink
+    &:hover
+        color: white

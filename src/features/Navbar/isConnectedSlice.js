@@ -5,7 +5,6 @@ export const isConnected = createSlice ({
   initialState: {
     status: false
   },
-  // A CHANGER SELON LE PROJET
   reducers : {
     connection: (state) => {state.status = true},
     deconnection: (state) => {state.status = false}

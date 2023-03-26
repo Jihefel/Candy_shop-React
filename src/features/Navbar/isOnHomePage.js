@@ -5,7 +5,6 @@ export const isOnHomePage = createSlice ({
   initialState: {
     value: true
   },
-  // A CHANGER SELON LE PROJET
   reducers : {
     goOther: (state) => {state.value = false},
     goHome: (state) => {state.value = true}

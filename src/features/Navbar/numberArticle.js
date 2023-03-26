@@ -5,12 +5,12 @@ export const numberArticleSlice = createSlice ({
   initialState: {
     value: 0
   },
-  // A CHANGER SELON LE PROJET
   reducers : {
     increment: (state) => {state.value += 1},
-    decrement: (state) => {state.value -= 1}
+    decrement: (state) => {state.value -= 1},
+    zeroArticle: (state) => {state.value = 0}
   }
 })
 
-export const {increment, decrement} = numberArticleSlice.actions
+export const {increment, decrement, zeroArticle} = numberArticleSlice.actions
 export default numberArticleSlice.reducer
