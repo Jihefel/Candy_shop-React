@@ -139,7 +139,7 @@ function Cart() {
         <h2 className="total text-end">
           Total: <strong>{prixTotal}</strong>€
         </h2>
-        <Button onClick={checkout}>Checkout</Button>
+        <Button onClick={checkout} variant="pink" className="text-white">Checkout</Button>
       </div>
     )
   ) : (

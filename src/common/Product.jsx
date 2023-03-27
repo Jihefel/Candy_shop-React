@@ -43,9 +43,10 @@ function Product(props) {
           variant="top"
           src={require(`../assets/images/${selectedProduct.image}`)}
           loading="lazy"
+          className="mt-3"
         />
         <Card.Body>
-          <h1 className="text-end price">{typeOfProduct.prix.toFixed(2)}€</h1>
+          <h1 className="text-end price my-3">{typeOfProduct.prix.toFixed(2)}€</h1>
           <Form className="d-flex justify-content-around">
             {typeOfProduct.variations.map((vari, index) => (
               <div className="d-flex flex-column" key={index}>
@@ -56,16 +57,16 @@ function Product(props) {
                   id={vari.nom}
                   value={vari.nom}
                   onClick={handleSelectVariations}
-                  defaultChecked = {vari.nom === typeOfProduct.variations[0].nom ? true : false}
+                  defaultChecked = {vari.id === typeOfProduct.variations[0].id ? true : false}
                 />
-                <div className="text-center">
+                <div className="text-center my-3">
                     <div className="variation-apercu">
                       <img
                         src={require(`../assets/images/${vari.image}`)}
                         alt={vari.nom}
                       />
                     </div>
-                  <label htmlFor={index}>
+                  <label htmlFor={vari.id}>
                     {vari.nom}
                   </label>
                 </div>

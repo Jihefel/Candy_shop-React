@@ -25,14 +25,14 @@
       "variations": [
         {
           "id": "bo001a",
-          "nom": "Menthe",
           "quantity": 1,
+          "nom": "Menthe",
           "image": "bonbon/mentos/mentos-mint.png"
         },
         {
           "id": "bo001b",
-          "nom": "Fruit",
           "quantity": 1,
+          "nom": "Fruit",
           "image": "bonbon/mentos/mentos-fruit.png"
         }
       ]
@@ -254,14 +254,20 @@
           "image": "chocolat/cote-dor/cotedor-noir-intense-70.png"
         },
         {
+          "id": "bc001b",
+          "quantity": 1,
           "nom": "Chocolat au Lait",
           "image": "chocolat/cote-dor/cotedor-lait.png"
         },
         {
+          "id": "bc001c",
+          "quantity": 1,
           "nom": "Noir 86% Intense",
           "image": "chocolat/cote-dor/cotedor-noir-86.png"
         },
         {
+          "id": "bc001d",
+          "quantity": 1,
           "nom": "Noir Orange",
           "image": "chocolat/cote-dor/cotedor-orange.png"
         }
@@ -291,22 +297,32 @@
       },
       "variations": [
         {
+          "id": "bc002a",
+          "quantity": 1,
           "nom": "Lait",
           "image": "chocolat/leonidas/leonidas-lait.png"
         },
         {
+          "id": "bc002b",
+          "quantity": 1,
           "nom": "Noir",
           "image": "chocolat/leonidas/leonidas-noir.png"
         },
         {
+          "id": "bc002c",
+          "quantity": 1,
           "nom": "Blanc",
           "image": "chocolat/leonidas/leonidas-blanc.png"
         },
         {
+          "id": "bc002d",
+          "quantity": 1,
           "nom": "Lait aux noisettes",
           "image": "chocolat/leonidas/leonidas-lait-noizettes.png"
         },
         {
+          "id": "bc002e",
+          "quantity": 1,
           "nom": "Noir Orange",
           "image": "chocolat/leonidas/leonidas-orange.png"
         }
@@ -335,14 +351,22 @@
       },
       "variations": [
         {
+          "id": "bc003a",
+          "quantity": 1,
           "nom": "Barre Chocolatée Noir Bio",
           "image": "chocolat/newtree/newtree-noir.png"
         },
         {
+          
+          "id": "bc003b",
+          "quantity": 1,
           "nom": "Barre Chocolatée Lait Orange Bio",
           "image": "chocolat/newtree/orange_tablette_transp.png"
         },
         {
+          
+          "id": "bc003c",
+          "quantity": 1,
           "nom": "Barre Chocolatée Noir 72% Bio",
           "image": "chocolat/newtree/newtree-noir72.png"
         }
@@ -373,14 +397,23 @@
       },
       "variations": [
         {
+          
+          "id": "bc004a",
+          "quantity": 1,
           "nom": "Barre Chocolatée Praliné",
           "image": "chocolat/galler/galler-lait.png"
         },
         {
+          
+          "id": "bc004b",
+          "quantity": 1,
           "nom": "Barre Chocolatée Noir Praliné",
           "image": "chocolat/galler/galler-noir.png"
         },
         {
+          
+          "id": "bc004c",
+          "quantity": 1,
           "nom": "Barre Chocolatée Blanc Praliné",
           "image": "chocolat/galler/galler-blanc.png"
         }
@@ -415,16 +448,25 @@
       },
       "variations": [
         {
+          
+          "id": "bc005a",
+          "quantity": 1,
           "nom": "Barre Chocolatée Crunch",
           "image": "chocolat/nestle/crunch-lait.webp"
         },
         {
+          
+          "id": "bc005b",
+          "quantity": 1,
           "nom": "Barre Chocolatée Blanc Crunch",
           "image": "chocolat/nestle/crunch-blanc.png"
         },
         {
+          
+          "id": "bc005c",
+          "quantity": 1,
           "nom": "Barre Chocolatée Noir Crunch",
-          "image": "chocolat/nestle/crunch-noir.jpg"
+          "image": "chocolat/nestle/crunch-noir.png"
         }
       ]
     }
@@ -460,14 +502,23 @@
       },
       "variations": [
         {
+          
+          "id": "ed001a",
+          "quantity": 1,
           "nom": "Classic",
           "image": "energy/redbull/redbull.png"
         },
         {
+          
+          "id": "ed001b",
+          "quantity": 1,
           "nom": "Sugarfree",
-          "image": "energy/redbull/redbull-sugarfree.png"
+          "image": "energy/redbull/sugarfree.webp"
         },
         {
+          
+          "id": "ed001c",
+          "quantity": 1,
           "nom": "Tropical",
           "image": "energy/redbull/redbull-tropical.png"
         }
@@ -503,14 +554,23 @@
       },
       "variations": [
         {
+          
+          "id": "ed002a",
+          "quantity": 1,
           "nom": "Classic",
-          "image": "energy/monster/monster.jpeg"
+          "image": "energy/monster/monster.webp"
         },
         {
-          "nom": "Ultra",
-          "image": "energy/monster/monster-ultra.png"
+          
+          "id": "ed002b",
+          "quantity": 1,
+          "nom": "Zero Sugar",
+          "image": "energy/monster/zero.webp"
         },
         {
+          
+          "id": "ed002c",
+          "quantity": 1,
           "nom": "Assault",
           "image": "energy/monster/Monster-Assault.webp"
         }
@@ -550,15 +610,24 @@
       },
       "variations": [
         {
+          
+          "id": "ed003a",
+          "quantity": 1,
           "nom": "Classic",
           "image": "energy/rockstar/rockstar.png"
         },
         {
-          "nom": "Sugar-Free",
+          
+          "id": "ed003b",
+          "quantity": 1,
+          "nom": "Fraise - Citron vert",
           "image": "energy/rockstar/rockstarsugarfree.png"
         },
         {
-          "nom": "Punched Energy + Guava Tropical Guava",
+          
+          "id": "ed003c",
+          "quantity": 1,
+          "nom": "Tropical Guava",
           "image": "energy/rockstar/rockstar-tropical.png"
         }
       ]
@@ -597,16 +666,25 @@
       },
       "variations": [
         {
+          
+          "id": "ed004a",
+          "quantity": 1,
           "nom": "Classic",
           "image": "energy/nalu/nalu.png"
         },
         {
-          "nom": "Sugar-Free",
-          "image": "energy/nalu/nalu-sugarfree.png"
+          
+          "id": "ed004b",
+          "quantity": 1,
+          "nom": "Frost",
+          "image": "energy/nalu/frost.webp"
         },
         {
+          
+          "id": "ed004c",
+          "quantity": 1,
           "nom": "Tropical Energy",
-          "image": "energy/nalu/nalu-exotic.png"
+          "image": "energy/nalu/exotic.webp"
         }
       ]
     },
@@ -641,16 +719,25 @@
       },
       "variations": [
         {
+          
+          "id": "ed005a",
+          "quantity": 1,
           "nom": "Classic",
-          "image": "energy/burn/burn.png"
+          "image": "energy/burn/classic.webp"
         },
         {
+          
+          "id": "ed005b",
+          "quantity": 1,
           "nom": "Zero",
-          "image": "energy/burn/burn-zero.png"
+          "image": "energy/burn/zero.webp"
         },
         {
+          
+          "id": "ed005c",
+          "quantity": 1,
           "nom": "Lemon Ice",
-          "image": "energy/burn/burn-lemon-ice.jpeg"
+          "image": "energy/burn/lemon-ice.webp"
         }
       ]
     }
@@ -691,14 +778,23 @@
       },
       "variations": [
         {
+          
+          "id": "co001a",
+          "quantity": 1,
           "nom": "Classic",
           "image": "confiseries/maltesers/maltesers.png"
         },
         {
+          
+          "id": "co001b",
+          "quantity": 1,
           "nom": "Teasers",
           "image": "confiseries/maltesers/Maltesers-Teasers.png"
         },
         {
+          
+          "id": "co001c",
+          "quantity": 1,
           "nom": "Buttons",
           "image": "confiseries/maltesers/maltesers-buttons.webp"
         }
@@ -730,14 +826,23 @@
       },
       "variations": [
         {
+          
+          "id": "co002",
+          "quantity": 1,
           "nom": "Peanut",
           "image": "confiseries/m&m's/m&ms-peanut.png"
         },
         {
-          "nom": "Choco",
+          
+          "id": "co002b",
+          "quantity": 1,
+          "nom": "Caramel",
           "image": "confiseries/m&m's/m&ms-choco.png"
         },
         {
+          
+          "id": "co002c",
+          "quantity": 1,
           "nom": "Crispy",
           "image": "confiseries/m&m's/m&ms-crispy.png"
         }
@@ -775,14 +880,23 @@
       },
       "variations": [
         {
+          
+          "id": "co003a",
+          "quantity": 1,
           "nom": "Classic",
           "image": "confiseries/kinderbueno/kinderbueno.jpeg"
         },
         {
+          
+          "id": "co003b",
+          "quantity": 1,
           "nom": "White",
           "image": "confiseries/kinderbueno/kinderbuen-blanc.webp"
         },
         {
+          
+          "id": "co003c",
+          "quantity": 1,
           "nom": "Dark",
           "image": "confiseries/kinderbueno/kinderbueno-dark.webp"
         }
@@ -817,10 +931,16 @@
       },
       "variations": [
         {
+          
+          "id": "co004a",
+          "quantity": 1,
           "nom": "Choco",
           "image": "confiseries/leoMilka/leo.png"
         },
         {
+          
+          "id": "co004b",
+          "quantity": 1,
           "nom": "Choco blanc",
           "image": "confiseries/leoMilka/leoBlanc.png"
         }
@@ -853,10 +973,16 @@
       },
       "variations": [
         {
+          
+          "id": "co005a",
+          "quantity": 1,
           "nom": "Classic",
           "image": "confiseries/kinderCountry/kindercountry.webp"
         },
         {
+          
+          "id": "co005b",
+          "quantity": 1,
           "nom": "Mini",
           "image": "confiseries/kinderCountry/country-minis.png"
         }
@@ -887,14 +1013,23 @@
       },
       "variations": [
         {
+          
+          "id": "ch001a",
+          "quantity": 1,
           "nom": "saveur Original",
           "image": "chips/lays/lays-natural.png"
         },
         {
+          
+          "id": "ch001b",
+          "quantity": 1,
           "nom": "saveur Barbecue",
           "image": "chips/lays/lays-bbq.png"
         },
         {
+          
+          "id": "ch001c",
+          "quantity": 1,
           "nom": "saveur Fromage et oignon",
           "image": "chips/lays/fromage-oignon.png"
         }
@@ -930,14 +1065,23 @@
       },
       "variations": [
         {
+          
+          "id": "ch002a",
+          "quantity": 1,
           "nom": "saveur Original",
           "image": "chips/pringles/original.png"
         },
         {
+          
+          "id": "ch002b",
+          "quantity": 1,
           "nom": "saveur Barbecue",
           "image": "chips/pringles/bbq.png"
         },
         {
+          
+          "id": "ch002c",
+          "quantity": 1,
           "nom": "saveur Fromage",
           "image": "chips/pringles/fromage.avif"
         }
@@ -965,14 +1109,23 @@
       },
       "variations": [
         {
+          
+          "id": "ch003a",
+          "quantity": 1,
           "nom": "cuites au four saveur Jalapeño",
           "image": "chips/cuite-au-four/jalepenos.png"
         },
         {
+          
+          "id": "ch003b",
+          "quantity": 1,
           "nom": "cuites au four saveur Barbecue",
           "image": "chips/cuite-au-four/bbq.png"
         },
         {
+          
+          "id": "ch003c",
+          "quantity": 1,
           "nom": "cuites au four saveur Fromage",
           "image": "chips/cuite-au-four/fromage.png"
         }
@@ -1000,14 +1153,23 @@
       },
       "variations": [
         {
+          
+          "id": "ch004a",
+          "quantity": 1,
           "nom": "croustillantes saveur paprika",
           "image": "chips/crocky/paprika.png"
         },
         {
+          
+          "id": "ch004b",
+          "quantity": 1,
           "nom": "croustillantes saveur Barbecue",
           "image": "chips/crocky/bbq.png"
         },
         {
+          
+          "id": "ch004c",
+          "quantity": 1,
           "nom": "croustillantes saveur Fromage",
           "image": "chips/crocky/fromage.png"
         }
@@ -1035,14 +1197,23 @@
       },
       "variations": [
         {
+          
+          "id": "ch005a",
+          "quantity": 1,
           "nom": "ondulées saveur barbecue",
           "image": "chips/vico/bbq.png"
         },
         {
+          
+          "id": "ch005b",
+          "quantity": 1,
           "nom": "ondulées saveur nature",
           "image": "chips/vico/nature.png"
         },
         {
+          
+          "id": "ch005c",
+          "quantity": 1,
           "nom": "ondulées saveur paprika",
           "image": "chips/vico/paprika.png"
         }
