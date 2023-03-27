@@ -723,7 +723,7 @@
       "id": "co001",
       "nom": "Maltesers",
       "prix": 1.49,
-      "banierre": "confiseries/maltesers/banner.jpeg",
+      "banniere": "confiseries/maltesers/banner.jpeg",
       "description": "Maltesers sont des petites boules croustillantes au malt recouvertes de chocolat au lait. La texture légère et le goût sucré et chocolaté en font une confiserie populaire.",
       "details": {
         "ingredients_principaux": [
@@ -822,7 +822,7 @@
       "id": "co003",
       "nom": "Kinder Bueno",
       "prix": 1.29,
-      "banierre": "confiserie/kinderbueno/banner01.webp",
+      "banniere": "confiseries/kinderbueno/banner01.webp",
       "description": "Kinder Bueno est une barre chocolatée fourrée de crème de noisettes et croustillante à l'intérieur. Elle est vendue en paquet individuel pour une consommation pratique en déplacement ou pour une pause gourmande.",
       "details": {
         "ingredients_principaux": [
@@ -999,7 +999,7 @@
       "id": "ch002",
       "nom": "Pringles",
       "prix": 2.49,
-      "banierre": "chips/pringles/banner.jpeg",
+      "banniere": "chips/pringles/banner.jpeg",
       "description": "Les chips saveur Original de Pringles sont des chips croustillantes et légèrement salées. Leur forme unique et leur texture croquante les rendent très populaires auprès des amateurs de chips. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
       "details": {
         "ingredients_principaux": [

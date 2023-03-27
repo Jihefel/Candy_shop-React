@@ -114,7 +114,7 @@ function Cart() {
                   }}
                   className="me-4"
                 />
-                <strong>{article[0].nom}</strong> - {article[1].nom}
+                <strong>{article[0].nom} </strong> - {article[1].nom}
               </div>
               <div className="d-flex gap-5 align-items-center">
                 <h3 className="me-5 my-0">
