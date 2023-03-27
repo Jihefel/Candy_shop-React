@@ -884,7 +884,7 @@
           "id": "co003a",
           "quantity": 1,
           "nom": "Classic",
-          "image": "confiseries/kinderbueno/kinderbueno.jpeg"
+          "image": "confiseries/kinderbueno/classique.webp"
         },
         {
           
@@ -897,8 +897,8 @@
           
           "id": "co003c",
           "quantity": 1,
-          "nom": "Dark",
-          "image": "confiseries/kinderbueno/kinderbueno-dark.webp"
+          "nom": "Coco",
+          "image": "confiseries/kinderbueno/coco.webp"
         }
       ]
     },
@@ -1016,22 +1016,22 @@
           
           "id": "ch001a",
           "quantity": 1,
-          "nom": "saveur Original",
+          "nom": "Original",
           "image": "chips/lays/lays-natural.png"
         },
         {
           
           "id": "ch001b",
           "quantity": 1,
-          "nom": "saveur Barbecue",
+          "nom": "Barbecue",
           "image": "chips/lays/lays-bbq.png"
         },
         {
           
           "id": "ch001c",
           "quantity": 1,
-          "nom": "saveur Fromage et oignon",
-          "image": "chips/lays/fromage-oignon.png"
+          "nom": "Fromage",
+          "image": "chips/lays/cheddar.webp"
         }
       ]
     },
@@ -1068,28 +1068,28 @@
           
           "id": "ch002a",
           "quantity": 1,
-          "nom": "saveur Original",
+          "nom": "Original",
           "image": "chips/pringles/original.png"
         },
         {
           
           "id": "ch002b",
           "quantity": 1,
-          "nom": "saveur Barbecue",
-          "image": "chips/pringles/bbq.png"
+          "nom": "Barbecue",
+          "image": "chips/pringles/bbq.webp"
         },
         {
           
           "id": "ch002c",
           "quantity": 1,
-          "nom": "saveur Fromage",
+          "nom": "Fromage - Oignons",
           "image": "chips/pringles/fromage.avif"
         }
       ]
     },
     {
       "id": "ch003",
-      "nom": "Kettle",
+      "nom": "Lay's Cuites au four",
       "prix": 3.99,
       "description": "Les chips cuites au four saveur Jalapeño de Kettle ont une texture croustillante et une saveur épicée qui plaira aux amateurs de piments. Elles sont fabriquées avec des ingrédients simples et sont cuites lentement pour une texture croquante unique. Elles sont parfaites pour une collation ou pour accompagner un sandwich ou une salade.",
       "details": {
@@ -1112,21 +1112,21 @@
           
           "id": "ch003a",
           "quantity": 1,
-          "nom": "cuites au four saveur Jalapeño",
+          "nom": "Jalapeño",
           "image": "chips/cuite-au-four/jalepenos.png"
         },
         {
           
           "id": "ch003b",
           "quantity": 1,
-          "nom": "cuites au four saveur Barbecue",
+          "nom": "Barbecue",
           "image": "chips/cuite-au-four/bbq.png"
         },
         {
           
           "id": "ch003c",
           "quantity": 1,
-          "nom": "cuites au four saveur Fromage",
+          "nom": "Fromage",
           "image": "chips/cuite-au-four/fromage.png"
         }
       ]
@@ -1156,21 +1156,21 @@
           
           "id": "ch004a",
           "quantity": 1,
-          "nom": "croustillantes saveur paprika",
+          "nom": "Paprika",
           "image": "chips/crocky/paprika.png"
         },
         {
           
           "id": "ch004b",
           "quantity": 1,
-          "nom": "croustillantes saveur Barbecue",
+          "nom": "Barbecue",
           "image": "chips/crocky/bbq.png"
         },
         {
           
           "id": "ch004c",
           "quantity": 1,
-          "nom": "croustillantes saveur Fromage",
+          "nom": "Mac'n'Cheese",
           "image": "chips/crocky/fromage.png"
         }
       ]
@@ -1200,21 +1200,21 @@
           
           "id": "ch005a",
           "quantity": 1,
-          "nom": "ondulées saveur barbecue",
+          "nom": "Barbecue",
           "image": "chips/vico/bbq.png"
         },
         {
           
           "id": "ch005b",
           "quantity": 1,
-          "nom": "ondulées saveur nature",
+          "nom": "Nature",
           "image": "chips/vico/nature.png"
         },
         {
           
           "id": "ch005c",
           "quantity": 1,
-          "nom": "ondulées saveur paprika",
+          "nom": "Lardons - oignons",
           "image": "chips/vico/paprika.png"
         }
       ]
