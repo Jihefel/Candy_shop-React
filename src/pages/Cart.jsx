@@ -58,8 +58,8 @@ function Cart() {
         </Link>
       </>
     ) : (
-      <div className="cart">
-        <h2>
+      <div className="cart pb-5">
+        <h2 className="mb-3">
           <strong>
             {username.at(0).toUpperCase() + username.substring(1).toLowerCase()}
           </strong>
@@ -136,10 +136,10 @@ function Cart() {
             </ListGroup.Item>
           ))}
         </ListGroup>
-        <h2 className="total text-end">
-          Total: <strong>{prixTotal}</strong>€
+        <h2 className="total text-end mt-3 text-white">
+          Total: <strong className="">{prixTotal}</strong> €
         </h2>
-        <Button onClick={checkout} variant="pink" className="text-white">Checkout</Button>
+        <Button onClick={checkout} variant="pink" className="text-white border">Passer au paiement</Button>
       </div>
     )
   ) : (

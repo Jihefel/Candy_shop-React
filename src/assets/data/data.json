@@ -5,7 +5,7 @@
       "nom": "Mentos",
       "prix": 1.49,
       "description": "Bonbons à la menthe avec une texture dure à l'extérieur et douce à l'intérieur.",
-      "banniere":"bonbon/mentos/banner.jpeg" ,
+      "banniere": "bonbon/mentos/banner.jpeg",
       "details": {
         "ingredients_principaux": [
           "Sirop de glucose",
@@ -42,7 +42,7 @@
       "nom": "Haribo",
       "prix": 1.99,
       "description": "Petits oursons gélifiés avec une texture douce et une variété de saveurs de fruits.",
-      "banniere":"bonbon/haribos/banner01.webp" ,
+      "banniere": "bonbon/haribos/banner01.webp",
       "details": {
         "ingredients_principaux": [
           "Sirop de glucose",
@@ -88,21 +88,21 @@
       "description": "Les bonbons Napoléons sont des bonbons acidulés et durs, avec une texture croquante et rafraîchissante qui apaise l'haleine et leur goût est apprécié depuis des générations.",
       "details": {
         "ingredients_principaux": [
-        "Sirop de glucose", 
-        "Sucre", 
-        "Gélatine", 
-        "Dextrose", 
-        "Acide citrique", 
-        "Arômes naturels", 
-        "Colorants alimentaires"
-      ],
-      "info_nutritionnelles": {
-        "calories": 140,
-        "glucides": 32,
-        "protéines": 2,
-        "lipides": 0
-      }
-    },
+          "Sucre",
+          "Sirop de glucose",
+          "Acidifiant (Acide citrique)",
+          "Dextrose",
+          "Arôme naturel",
+          "Colorant"
+        ],
+        "info_nutritionnelles": {
+          "calories": 380,
+          "glucides": 94,
+          "dont sucres": 66.5,
+          "protéines": 0,
+          "lipides": 0
+        }
+      },
       "variations": [
         {
           "id": "bo003a",
@@ -130,28 +130,28 @@
         }
       ]
     },
-{
+    {
       "id": "bo004",
       "nom": "Chupa Chups",
       "prix": 1.99,
       "description": "Les sucettes Chupa Chups sont des sucettes sphériques sur un bâtonnet en plastique, offrant une variété de saveurs fruitées et acidulées. Leur texture douce et leur forme reconnaissable en font un classique des confiseries pour petits et grands.",
       "details": {
         "ingredients_principaux": [
-        "Sirop de glucose", 
-        "Sucre", 
-        "Gélatine", 
-        "Dextrose", 
-        "Acide citrique", 
-        "Arômes naturels", 
-        "Colorants alimentaires"
-      ],
-      "info_nutritionnelles": {
-        "calories": 140,
-        "glucides": 32,
-        "protéines": 2,
-        "lipides": 0
-      }
-    },
+          "Sucre",
+          "Sirop de glucose",
+          "Purée de fruits (3%) (pomme, cerise, framboise, ananas, citron vert, citron, fraise, pêche, banane, orange, myrtille, mûre, mangue, pastèque, kiwi)",
+          "Acidifiants : acide lactique, acide malique, acide citrique",
+          "Arômes",
+          "Colorants (E100, E160c, E162)"
+        ],
+        "info_nutritionnelles": {
+          "calories": 387,
+          "glucides": 95,
+          "dont sucres": 78,
+          "protéines": 0,
+          "lipides": 0
+        }
+      },
       "variations": [
         {
           "id": "bo004a",
@@ -179,28 +179,27 @@
         }
       ]
     },
-{
+    {
       "id": "bo005",
       "nom": "Lutti",
       "prix": 1.99,
       "description": "Les bonbons Lutti sont des bonbons gélifiés en forme d'oursons, proposant une multitude de saveurs fruitées comme la cerise, la fraise, la pomme et bien d'autres encore. Leur texture douce et leur goût sucré en font un en-cas idéal pour les amateurs de sucreries.",
       "details": {
         "ingredients_principaux": [
-        "Sirop de glucose", 
-        "Sucre", 
-        "Gélatine", 
-        "Dextrose", 
-        "Acide citrique", 
-        "Arômes naturels", 
-        "Colorants alimentaires"
-      ],
-      "info_nutritionnelles": {
-        "calories": 140,
-        "glucides": 32,
-        "protéines": 2,
-        "lipides": 0
-      }
-    },
+          "Sirop de glucose",
+          "Sucre",
+          "Acidifiants",
+          "Arômes",
+          "Colorants alimentaires"
+        ],
+        "info_nutritionnelles": {
+          "calories": 384,
+          "glucides": 94,
+          "dont sucres" : 52,
+          "protéines": 0,
+          "lipides": 0
+        }
+      },
       "variations": [
         {
           "id": "bo005a",
@@ -228,7 +227,7 @@
       "id": "bc001",
       "nom": "Côte d'Or",
       "prix": 1.99,
-      "banniere":"chocolat/cote-dor/banner.png" ,
+      "banniere": "chocolat/cote-dor/banner.png",
       "description": "Une barre de chocolat noir intense de qualité supérieure, fabriquée en Belgique avec des fèves de cacao soigneusement sélectionnées.",
       "details": {
         "ingredients_principaux": [
@@ -353,22 +352,20 @@
         {
           "id": "bc003a",
           "quantity": 1,
-          "nom": "Barre Chocolatée Noir Bio",
+          "nom": "Noir Bio",
           "image": "chocolat/newtree/newtree-noir.png"
         },
         {
-          
           "id": "bc003b",
           "quantity": 1,
-          "nom": "Barre Chocolatée Lait Orange Bio",
+          "nom": "Lait Orange Bio",
           "image": "chocolat/newtree/orange_tablette_transp.png"
         },
         {
-          
           "id": "bc003c",
           "quantity": 1,
-          "nom": "Barre Chocolatée Noir 72% Bio",
-          "image": "chocolat/newtree/newtree-noir72.png"
+          "nom": "Citron vert - Muesli Bio",
+          "image": "chocolat/newtree/newtree-citron.png"
         }
       ]
     },
@@ -397,21 +394,18 @@
       },
       "variations": [
         {
-          
           "id": "bc004a",
           "quantity": 1,
           "nom": "Barre Chocolatée Praliné",
           "image": "chocolat/galler/galler-lait.png"
         },
         {
-          
           "id": "bc004b",
           "quantity": 1,
           "nom": "Barre Chocolatée Noir Praliné",
           "image": "chocolat/galler/galler-noir.png"
         },
         {
-          
           "id": "bc004c",
           "quantity": 1,
           "nom": "Barre Chocolatée Blanc Praliné",
@@ -448,21 +442,18 @@
       },
       "variations": [
         {
-          
           "id": "bc005a",
           "quantity": 1,
           "nom": "Barre Chocolatée Crunch",
           "image": "chocolat/nestle/crunch-lait.webp"
         },
         {
-          
           "id": "bc005b",
           "quantity": 1,
           "nom": "Barre Chocolatée Blanc Crunch",
           "image": "chocolat/nestle/crunch-blanc.png"
         },
         {
-          
           "id": "bc005c",
           "quantity": 1,
           "nom": "Barre Chocolatée Noir Crunch",
@@ -476,7 +467,7 @@
       "id": "ed001",
       "nom": "Red Bull Energy Drink",
       "prix": 2.50,
-      "banniere":"energy/redbull/banner.jpeg" ,
+      "banniere": "energy/redbull/banner.jpeg",
       "description": "Red Bull est une boisson énergisante populaire qui fournit une dose de caféine et d'autres ingrédients stimulants pour améliorer l'énergie, la concentration et les performances. La boisson a une saveur douce et acidulée, avec un goût légèrement amer caractéristique de la caféine.",
       "details": {
         "ingredients_principaux": [
@@ -502,21 +493,18 @@
       },
       "variations": [
         {
-          
           "id": "ed001a",
           "quantity": 1,
           "nom": "Classic",
           "image": "energy/redbull/redbull.png"
         },
         {
-          
           "id": "ed001b",
           "quantity": 1,
           "nom": "Sugarfree",
           "image": "energy/redbull/sugarfree.webp"
         },
         {
-          
           "id": "ed001c",
           "quantity": 1,
           "nom": "Tropical",
@@ -526,9 +514,9 @@
     },
     {
       "id": "ed002",
-      "nom": "Monster Energy",
+      "nom": "Monster",
       "prix": 3.00,
-      "banniere":"energy/monster/banner.jpeg",
+      "banniere": "energy/monster/banner.jpeg",
       "description": "Monster Energy est une boisson énergisante populaire qui contient une combinaison de caféine, de taurine, de guarana et d'autres ingrédients stimulants pour augmenter l'énergie, la concentration et les performances. La boisson a une saveur sucrée et fruitée, avec un arrière-goût légèrement amer.",
       "details": {
         "ingredients_principaux": [
@@ -554,21 +542,18 @@
       },
       "variations": [
         {
-          
           "id": "ed002a",
           "quantity": 1,
           "nom": "Classic",
           "image": "energy/monster/monster.webp"
         },
         {
-          
           "id": "ed002b",
           "quantity": 1,
           "nom": "Zero Sugar",
           "image": "energy/monster/zero.webp"
         },
         {
-          
           "id": "ed002c",
           "quantity": 1,
           "nom": "Assault",
@@ -578,7 +563,7 @@
     },
     {
       "id": "ed003",
-      "nom": "Rockstar Energy Drink",
+      "nom": "Rockstar",
       "prix": 2.99,
       "description": "Rockstar Energy Drink est une boisson énergisante qui contient une combinaison de caféine, de taurine, de guarana et de ginseng pour augmenter l'énergie et la concentration. La boisson a une saveur légèrement sucrée avec des notes de fruits tropicaux et une texture effervescente.",
       "details": {
@@ -610,21 +595,18 @@
       },
       "variations": [
         {
-          
           "id": "ed003a",
           "quantity": 1,
           "nom": "Classic",
           "image": "energy/rockstar/rockstar.png"
         },
         {
-          
           "id": "ed003b",
           "quantity": 1,
           "nom": "Fraise - Citron vert",
           "image": "energy/rockstar/rockstarsugarfree.png"
         },
         {
-          
           "id": "ed003c",
           "quantity": 1,
           "nom": "Tropical Guava",
@@ -666,21 +648,18 @@
       },
       "variations": [
         {
-          
           "id": "ed004a",
           "quantity": 1,
           "nom": "Classic",
           "image": "energy/nalu/nalu.png"
         },
         {
-          
           "id": "ed004b",
           "quantity": 1,
           "nom": "Frost",
           "image": "energy/nalu/frost.webp"
         },
         {
-          
           "id": "ed004c",
           "quantity": 1,
           "nom": "Tropical Energy",
@@ -719,21 +698,18 @@
       },
       "variations": [
         {
-          
           "id": "ed005a",
           "quantity": 1,
           "nom": "Classic",
           "image": "energy/burn/classic.webp"
         },
         {
-          
           "id": "ed005b",
           "quantity": 1,
           "nom": "Zero",
           "image": "energy/burn/zero.webp"
         },
         {
-          
           "id": "ed005c",
           "quantity": 1,
           "nom": "Lemon Ice",
@@ -778,21 +754,18 @@
       },
       "variations": [
         {
-          
           "id": "co001a",
           "quantity": 1,
           "nom": "Classic",
           "image": "confiseries/maltesers/maltesers.png"
         },
         {
-          
           "id": "co001b",
           "quantity": 1,
           "nom": "Teasers",
           "image": "confiseries/maltesers/Maltesers-Teasers.png"
         },
         {
-          
           "id": "co001c",
           "quantity": 1,
           "nom": "Buttons",
@@ -826,21 +799,18 @@
       },
       "variations": [
         {
-          
           "id": "co002",
           "quantity": 1,
           "nom": "Peanut",
           "image": "confiseries/m&m's/m&ms-peanut.png"
         },
         {
-          
           "id": "co002b",
           "quantity": 1,
           "nom": "Caramel",
           "image": "confiseries/m&m's/m&ms-choco.png"
         },
         {
-          
           "id": "co002c",
           "quantity": 1,
           "nom": "Crispy",
@@ -880,21 +850,18 @@
       },
       "variations": [
         {
-          
           "id": "co003a",
           "quantity": 1,
           "nom": "Classic",
           "image": "confiseries/kinderbueno/classique.webp"
         },
         {
-          
           "id": "co003b",
           "quantity": 1,
           "nom": "White",
           "image": "confiseries/kinderbueno/kinderbuen-blanc.webp"
         },
         {
-          
           "id": "co003c",
           "quantity": 1,
           "nom": "Coco",
@@ -931,14 +898,12 @@
       },
       "variations": [
         {
-          
           "id": "co004a",
           "quantity": 1,
           "nom": "Choco",
           "image": "confiseries/leoMilka/leo.png"
         },
         {
-          
           "id": "co004b",
           "quantity": 1,
           "nom": "Choco blanc",
@@ -973,14 +938,12 @@
       },
       "variations": [
         {
-          
           "id": "co005a",
           "quantity": 1,
           "nom": "Classic",
           "image": "confiseries/kinderCountry/kindercountry.webp"
         },
         {
-          
           "id": "co005b",
           "quantity": 1,
           "nom": "Mini",
@@ -994,7 +957,7 @@
       "id": "ch001",
       "nom": "Lay's",
       "prix": 1.99,
-      "banierre": "chips/lays/banner.jpeg",
+      "banniere": "chips/lays/banniere-lays.jpg",
       "description": "Les chips saveur Original de Lays sont des chips croustillantes et légèrement salées. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
       "details": {
         "ingredients_principaux": [
@@ -1013,21 +976,18 @@
       },
       "variations": [
         {
-          
           "id": "ch001a",
           "quantity": 1,
           "nom": "Original",
           "image": "chips/lays/lays-natural.png"
         },
         {
-          
           "id": "ch001b",
           "quantity": 1,
           "nom": "Barbecue",
           "image": "chips/lays/lays-bbq.png"
         },
         {
-          
           "id": "ch001c",
           "quantity": 1,
           "nom": "Fromage",
@@ -1039,7 +999,7 @@
       "id": "ch002",
       "nom": "Pringles",
       "prix": 2.49,
-      "banierre":"chips/pringles/banner.jpeg",
+      "banierre": "chips/pringles/banner.jpeg",
       "description": "Les chips saveur Original de Pringles sont des chips croustillantes et légèrement salées. Leur forme unique et leur texture croquante les rendent très populaires auprès des amateurs de chips. Elles sont idéales pour une collation ou un apéritif, et peuvent être accompagnées de sauces ou trempettes.",
       "details": {
         "ingredients_principaux": [
@@ -1065,21 +1025,18 @@
       },
       "variations": [
         {
-          
           "id": "ch002a",
           "quantity": 1,
           "nom": "Original",
           "image": "chips/pringles/original.png"
         },
         {
-          
           "id": "ch002b",
           "quantity": 1,
           "nom": "Barbecue",
           "image": "chips/pringles/bbq.webp"
         },
         {
-          
           "id": "ch002c",
           "quantity": 1,
           "nom": "Fromage - Oignons",
@@ -1109,21 +1066,18 @@
       },
       "variations": [
         {
-          
           "id": "ch003a",
           "quantity": 1,
           "nom": "Jalapeño",
           "image": "chips/cuite-au-four/jalepenos.png"
         },
         {
-          
           "id": "ch003b",
           "quantity": 1,
           "nom": "Barbecue",
           "image": "chips/cuite-au-four/bbq.png"
         },
         {
-          
           "id": "ch003c",
           "quantity": 1,
           "nom": "Fromage",
@@ -1153,21 +1107,18 @@
       },
       "variations": [
         {
-          
           "id": "ch004a",
           "quantity": 1,
           "nom": "Paprika",
           "image": "chips/crocky/paprika.png"
         },
         {
-          
           "id": "ch004b",
           "quantity": 1,
           "nom": "Barbecue",
           "image": "chips/crocky/bbq.png"
         },
         {
-          
           "id": "ch004c",
           "quantity": 1,
           "nom": "Mac'n'Cheese",
@@ -1197,21 +1148,18 @@
       },
       "variations": [
         {
-          
           "id": "ch005a",
           "quantity": 1,
           "nom": "Barbecue",
           "image": "chips/vico/bbq.png"
         },
         {
-          
           "id": "ch005b",
           "quantity": 1,
           "nom": "Nature",
           "image": "chips/vico/nature.png"
         },
         {
-          
           "id": "ch005c",
           "quantity": 1,
           "nom": "Lardons - oignons",
